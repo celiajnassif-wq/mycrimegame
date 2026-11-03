@@ -1,0 +1,20 @@
+# One-click deploy on Render (render.com): New > Blueprint > pick this repo.
+services:
+  - type: web
+    name: dossiers
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: ANTHROPIC_API_KEY
+        sync: false          # Render asks you for it; it never goes in the repo
+      - key: CLAUDE_MODEL
+        value: claude-sonnet-5-5
+      - key: RATE_PER_MINUTE
+        value: "12"
+      - key: RATE_PER_DAY
+        value: "400"

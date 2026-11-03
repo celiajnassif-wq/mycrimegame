@@ -37,7 +37,7 @@ shared pure logic in `shared/`, case data in `cases/`.
   suspects{ persona, knows, hides, lies[{id, claim, truth, caughtBy[], pointed[][], reaction}], breakdown?,
   confession?, mock{} }, refusalTemplate, epilogue, solutionMemo[]`.
 
-`cases/<id>/assets/`: SVG only. Served at `/case-assets/<id>/<file>`.
+`cases/<id>/assets/`: SVG, PNG, JPG or WebP (no external images). Served at `/case-assets/<id>/<file>`.
 
 ## Validator checks (`shared/validate.ts`)
 Schema, every cross reference, every timeline fact sourced, every document used (proof, elimination, lie catcher,

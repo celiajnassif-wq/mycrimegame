@@ -94,6 +94,18 @@ sharing it.
 
 ## Deploying
 
+### Render (easiest, free tier)
+
+1. Sign in at render.com with your GitHub account.
+2. New, then Blueprint, then pick this repository. Render reads `render.yaml`.
+3. When asked, paste your `ANTHROPIC_API_KEY` (from console.anthropic.com). It stays in Render's settings, never in the repo.
+4. Wait for the build, then open the address Render gives you. Free instances sleep when idle, so the first visit
+   after a while takes about a minute to wake up.
+
+Without a key the game still works, with scripted suspects (mock mode).
+
+### Anywhere else
+
 It is one Node process. Any host that runs Node 20+ works (Render, Railway, Fly.io, a VPS).
 
 ```bash

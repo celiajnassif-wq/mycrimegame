@@ -1,0 +1,8 @@
+node_modules
+dist
+dist-demo
+test-results
+screenshots
+.env
+forge-out
+.git
