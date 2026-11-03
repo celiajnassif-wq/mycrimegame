@@ -1,0 +1,39 @@
+{
+  "name": "dossiers",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n server,web -c yellow,cyan \"tsx watch server/index.ts\" \"vite\"",
+    "build": "tsx scripts/validate-case.ts --all && tsc --noEmit -p tsconfig.json && vite build",
+    "start": "NODE_ENV=production tsx server/index.ts",
+    "validate-case": "tsx scripts/validate-case.ts",
+    "forge": "tsx scripts/forge.ts",
+    "test": "vitest run",
+    "e2e": "npm run build && playwright test",
+    "build:demo": "vite build --mode demo && tsx scripts/build-demo.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.4.0",
+    "@hono/node-server": "^2.1.6",
+    "ajv": "^8.20.0",
+    "dotenv": "^16.4.5",
+    "hono": "^4.13.16",
+    "qrcode-generator": "^2.0.4",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "tsx": "^4.23.15",
+    "zustand": "^5.0.16"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^6.2.1",
+    "concurrently": "^10.0.6",
+    "typescript": "~5.9.3",
+    "vite": "^8.3.5",
+    "vitest": "^5.1.0"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "dossiers/case.schema.json",
+  "title": "Dossiers public case file",
+  "type": "object",
+  "required": ["id", "title", "subtitle", "place", "date", "reopened", "languages", "intro", "victim", "groups", "documents", "timeline", "suspects", "hints", "accusation"],
+  "additionalProperties": false,
+  "definitions": {
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "time": { "type": "string", "pattern": "^([01][0-9]|2[0-4]):[0-5][0-9]$" },
+    "option": { "type": "object", "required": ["id", "label"], "additionalProperties": false, "properties": { "id": { "$ref": "#/definitions/id" }, "label": { "type": "string" } } }
+  },
+  "properties": {
+    "$schema": { "type": "string" },
+    "id": { "$ref": "#/definitions/id" },
+    "title": { "type": "string", "minLength": 1 },
+    "subtitle": { "type": "string" },
+    "place": { "type": "string" },
+    "date": { "type": "string" },
+    "reopened": { "type": "string" },
+    "languages": { "type": "array", "items": { "type": "string" } },
+    "intro": {
+      "type": "object", "required": ["label", "stamps", "briefing"], "additionalProperties": false,
+      "properties": { "label": { "type": "string" }, "stamps": { "type": "array", "items": { "type": "string" } }, "briefing": { "type": "array", "items": { "type": "string" } } }
+    },
+    "victim": { "type": "object", "required": ["name", "summary"], "additionalProperties": false, "properties": { "name": { "type": "string" }, "summary": { "type": "string" } } },
+    "groups": { "type": "array", "minItems": 1, "items": { "type": "object", "required": ["id", "label"], "additionalProperties": false, "properties": { "id": { "$ref": "#/definitions/id" }, "label": { "type": "string" } } } },
+    "documents": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "required": ["id", "kind", "title", "group", "body"], "additionalProperties": false,
+        "properties": {
+          "id": { "$ref": "#/definitions/id" },
+          "kind": { "enum": ["typed", "form", "carbon", "handwritten", "newspaper", "email", "lab", "ledger", "suspect", "floorplan", "photo", "sealed", "handwriting", "qr"] },
+          "title": { "type": "string" },
+          "group": { "$ref": "#/definitions/id" },
+          "date": { "type": "string" },
+          "rotate": { "type": "number", "minimum": -8, "maximum": 8 },
+          "hidden": { "type": "boolean" },
+          "unlockedBy": { "type": "object", "additionalProperties": false, "minProperties": 1, "properties": { "qr": { "$ref": "#/definitions/id" }, "seal": { "$ref": "#/definitions/id" }, "read": { "$ref": "#/definitions/id" } } },
+          "body": { "type": "object" }
+        },
+        "allOf": [
+          { "if": { "properties": { "kind": { "const": "handwritten" } } }, "then": { "properties": { "body": { "required": ["lang", "original", "translation"] } } } },
+          { "if": { "properties": { "kind": { "const": "qr" } } }, "then": { "properties": { "body": { "required": ["payload", "unlocks"] } } } },
+          { "if": { "properties": { "kind": { "const": "photo" } } }, "then": { "properties": { "body": { "required": ["svg", "tags"] } } } },
+          { "if": { "properties": { "kind": { "const": "floorplan" } } }, "then": { "properties": { "body": { "required": ["svg", "legend"] } } } },
+          { "if": { "properties": { "kind": { "const": "sealed" } } }, "then": { "properties": { "body": { "required": ["seal", "letter"] } } } },
+          { "if": { "properties": { "kind": { "const": "suspect" } } }, "then": { "properties": { "body": { "required": ["suspectId"] } } } },
+          { "if": { "properties": { "kind": { "const": "handwriting" } } }, "then": { "properties": { "body": { "required": ["columns", "rows"] } } } },
+          { "if": { "properties": { "kind": { "enum": ["form", "ledger"] } } }, "then": { "properties": { "body": { "required": ["columns", "rows"] } } } },
+          { "if": { "properties": { "kind": { "const": "lab" } } }, "then": { "properties": { "body": { "required": ["rows"] } } } },
+          { "if": { "properties": { "kind": { "const": "email" } } }, "then": { "properties": { "body": { "required": ["from", "to", "subject", "lines"] } } } },
+          { "if": { "properties": { "kind": { "const": "newspaper" } } }, "then": { "properties": { "body": { "required": ["masthead", "headline", "columns"] } } } },
+          { "if": { "properties": { "kind": { "enum": ["typed", "carbon"] } } }, "then": { "properties": { "body": { "required": ["lines"] } } } }
+        ]
+      }
+    },
+    "timeline": {
+      "type": "object", "required": ["date", "start", "end", "lanes", "facts"], "additionalProperties": false,
+      "properties": {
+        "date": { "type": "string" }, "start": { "$ref": "#/definitions/time" }, "end": { "$ref": "#/definitions/time" },
+        "lanes": { "type": "array", "items": { "type": "object", "required": ["id", "label"], "additionalProperties": false, "properties": { "id": { "$ref": "#/definitions/id" }, "label": { "type": "string" }, "suspectId": { "$ref": "#/definitions/id" } } } },
+        "facts": {
+          "type": "array",
+          "items": {
+            "type": "object", "required": ["id", "lane", "kind", "start", "label", "source"], "additionalProperties": false,
+            "properties": {
+              "id": { "$ref": "#/definitions/id" }, "lane": { "$ref": "#/definitions/id" },
+              "kind": { "enum": ["record", "statement", "absence", "window", "moment"] },
+              "start": { "$ref": "#/definitions/time" }, "end": { "$ref": "#/definitions/time" },
+              "label": { "type": "string" }, "place": { "type": "string" }, "source": { "$ref": "#/definitions/id" },
+              "conflictsWith": { "type": "array", "items": { "$ref": "#/definitions/id" } }
+            }
+          }
+        }
+      }
+    },
+    "suspects": {
+      "type": "array", "minItems": 2,
+      "items": {
+        "type": "object", "required": ["id", "name", "role", "age", "sheet", "portrait", "questions", "openingLine"], "additionalProperties": false,
+        "properties": {
+          "id": { "$ref": "#/definitions/id" }, "name": { "type": "string" }, "role": { "type": "string" }, "age": { "type": "integer" },
+          "address": { "type": "string" }, "sheet": { "type": "array", "items": { "type": "string" } },
+          "portrait": { "type": "object", "required": ["seed"], "properties": { "seed": { "type": "integer" } } },
+          "portraitAsset": { "type": "string" },
+          "openingLine": { "type": "string" },
+          "questions": { "type": "array", "items": { "type": "object", "required": ["id", "text"], "additionalProperties": false, "properties": { "id": { "$ref": "#/definitions/id" }, "text": { "type": "string" }, "unlockedBy": { "$ref": "#/definitions/id" } } } }
+        }
+      }
+    },
+    "hints": {
+      "type": "array",
+      "items": {
+        "type": "object", "required": ["id", "question", "hints"], "additionalProperties": false,
+        "properties": {
+          "id": { "$ref": "#/definitions/id" }, "question": { "type": "string" },
+          "hints": { "type": "array", "minItems": 1, "items": { "type": "object", "required": ["id", "tier", "text"], "additionalProperties": false, "properties": { "id": { "$ref": "#/definitions/id" }, "tier": { "type": "integer", "minimum": 1 }, "text": { "type": "string" } } } }
+        }
+      }
+    },
+    "accusation": {
+      "type": "object", "required": ["how", "why", "proofCount"], "additionalProperties": false,
+      "properties": {
+        "how": { "type": "array", "minItems": 2, "items": { "$ref": "#/definitions/option" } },
+        "why": { "type": "array", "minItems": 2, "items": { "$ref": "#/definitions/option" } },
+        "proofCount": { "const": 3 }
+      }
+    }
+  }
+}

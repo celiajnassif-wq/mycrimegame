@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <g fill="none" stroke="#1d2a4a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M40 40 L362 42 L360 262 L42 260 Z"/>
+    <path d="M270 42 L271 120 L360 121"/>
+    <path d="M60 40 L60 34 M150 41 L150 34 M60 34 L150 35"/>
+    <path d="M190 41 L190 34 M280 42 L280 35 M190 34 L280 35" />
+    <path d="M42 200 L42 250" stroke-width="5" stroke="#f4ecd8"/>
+    <path d="M42 200 Q80 204 84 246"/>
+    <rect x="150" y="130" width="96" height="44"/>
+    <circle cx="198" cy="190" r="12"/>
+    <circle cx="160" cy="214" r="11" stroke-dasharray="3 3"/>
+    <rect x="320" y="200" width="30" height="22"/>
+    <path d="M20 200 L20 120 M10 130 L20 120 L30 130"/>
+  </g>
+  <g font-family="Caveat, cursive" font-size="16" fill="#1d2a4a">
+    <text x="292" y="86">wash</text>
+    <text x="64" y="28">shutters</text><text x="200" y="28">shutters</text>
+    <text x="12" y="280">to stair, café, watchman</text>
+    <text x="180" y="156">desk</text>
+  </g>
+  <g font-family="Caveat, cursive" font-size="15" fill="#8b1a1a" font-weight="600">
+    <circle cx="198" cy="190" r="0.1"/>
+    <text x="214" y="200">1</text><text x="140" y="236">2</text><text x="326" y="244">3</text><text x="110" y="62">4</text><text x="92" y="232">5</text><text x="34" y="116">6</text>
+  </g>
+  <text x="300" y="285" font-family="Caveat, cursive" font-size="14" fill="#1d2a4a">Rue Stamboul is north</text>
+</svg>

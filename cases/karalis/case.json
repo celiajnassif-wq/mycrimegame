@@ -1,0 +1,729 @@
+{
+  "id": "karalis",
+  "title": "The Karalis File",
+  "subtitle": "Death of a cotton broker",
+  "place": "Alexandria, Egypt",
+  "date": "Thursday 10 January 1952",
+  "reopened": "Reopened for review, March 2024",
+  "languages": ["English", "Arabic", "French", "Greek"],
+  "intro": {
+    "label": "KARALIS, Spyridon. Alex. Police Ref. 52/117",
+    "stamps": ["CLOSED: ACCIDENT", "REOPENED 2024", "CONFIDENTIAL"],
+    "briefing": [
+      "On the morning of Friday 11 January 1952, the cotton broker Spyridon Karalis, 61, was found dead in his shuttered office at 14 Rue Stamboul, Alexandria. A charcoal brazier had burned out beside his desk.",
+      "The police called it an accident: a man alone, a cold night, closed shutters, charcoal fumes. The file was closed within a week.",
+      "In 2024 a box of the family's papers, a watchman's notebook and the original autopsy samples surfaced at the same time. You are the reviewing investigator. Read the desk, question the three people closest to him, and file a charge: who, how, why, and three records that prove it."
+    ]
+  },
+  "victim": {
+    "name": "Spyridon Karalis",
+    "summary": "Greek Alexandrian cotton broker, 61, widower. Office at 14 Rue Stamboul. Warehouse at Minet el Bassal run by his nephew."
+  },
+  "groups": [
+    { "id": "police-1952", "label": "Police file, 1952" },
+    { "id": "statements", "label": "Statements taken, January 1952" },
+    { "id": "recovered", "label": "Recovered records" },
+    { "id": "estate", "label": "Karalis estate box" },
+    { "id": "review-2024", "label": "Review, 2024" }
+  ],
+  "documents": [
+    {
+      "id": "review-brief", "kind": "email", "title": "Review brief", "group": "review-2024", "date": "4 March 2024", "rotate": -1,
+      "body": {
+        "from": "Nadia Halim <n.halim@archive-review.example>",
+        "to": "Reviewing Investigator",
+        "date": "Mon, 4 Mar 2024 09:12",
+        "subject": "Ref 52/117 Karalis: your desk",
+        "lines": [
+          "Good morning,",
+          "Three things arrived this winter that make Ref 52/117 worth a second look: the Karalis estate box (deposited by a great-niece), the notebook kept by the building's night watchman (donated by his grandson), and the 1952 autopsy samples, which the university lab has now re-read.",
+          "Everything is on your desk. Some records were digitised by the municipal archive: scan the QR stickers to pull the scans up.",
+          "The original conclusion was accidental charcoal poisoning. Please tell me if it holds. If it does not, I need a name, a method, a reason, and three records I can put in front of a review board.",
+          "The three people closest to Karalis were interviewed in 1952. Their 1952 statements are in the file, and you can put questions to them in the reconstruction room.",
+          "Nadia Halim, Archive Review Office"
+        ],
+        "attachments": ["52-117-index.pdf"]
+      }
+    },
+    {
+      "id": "closure-report", "kind": "typed", "title": "Closure report", "group": "police-1952", "date": "17 January 1952", "rotate": 1.5,
+      "body": {
+        "letterhead": "ALEXANDRIA CITY POLICE . ATTARINE DIVISION",
+        "ref": "Ref. 52/117",
+        "lines": [
+          "Subject: Death of KARALIS, Spyridon, broker, 61 years, at 14 Rue Stamboul.",
+          "The deceased was found at 08.10 on 11 January by his employee Miss L. Sabry, in his office, the street door of which had latched shut. The shutters were closed. A charcoal brazier stood beside the desk and had burned out.",
+          "The medical examiner reports death by charcoal fumes, lividity of the cherry type being present.",
+          "No sign of violence, no disorder, no money missing from the safe.",
+          "Conclusion: accidental death. The deceased lit a brazier against the cold and was overcome. File closed."
+        ],
+        "signature": "Lt. Mahmoud Fawzi",
+        "stamp": "CLOSED"
+      }
+    },
+    {
+      "id": "scene-report", "kind": "typed", "title": "Scene report", "group": "police-1952", "date": "11 January 1952", "rotate": -2,
+      "body": {
+        "letterhead": "ALEXANDRIA CITY POLICE . SCENE REPORT",
+        "ref": "Ref. 52/117",
+        "lines": [
+          "Attended 08.40. Office on the first floor, one room with a small washroom. Street door with spring latch, closes and locks itself when pulled.",
+          "Deceased seated at the desk, head on his forearms. On the desk: one coffee cup (Turkish, empty, grounds dried), an open ledger, a fountain pen.",
+          "Beside the desk: a small clay brazier, ash only. An electric fire in the corner, its plug out of the wall.",
+          "Both shutters closed and hooked from inside. Window glass closed.",
+          "The deceased's keys in his waistcoat pocket. Safe locked, contents in order per Miss Sabry.",
+          "Note: the café below reports the cup was theirs."
+        ],
+        "signature": "Sgt. Ibrahim Rizk"
+      }
+    },
+    {
+      "id": "scene-photo", "kind": "photo", "title": "Scene photograph", "group": "police-1952", "date": "11 January 1952", "rotate": 2.5,
+      "body": {
+        "svg": "scene-photo.svg",
+        "caption": "Police photograph, office of S. Karalis, 11.I.52, 09.05.",
+        "back": "Neg. 52/117/3. Sgt. Rizk.",
+        "tags": [
+          { "n": 1, "x": 30, "y": 72, "label": "Clay brazier, burned out, placed close to the chair" },
+          { "n": 2, "x": 52, "y": 47, "label": "A single coffee cup on the desk" },
+          { "n": 3, "x": 87, "y": 70, "label": "Electric fire in the corner, unplugged" },
+          { "n": 4, "x": 14, "y": 24, "label": "Shutters closed and hooked" },
+          { "n": 5, "x": 66, "y": 50, "label": "Ledger open at the page for the Banque Commerciale d'Orient" }
+        ]
+      }
+    },
+    {
+      "id": "floor-plan", "kind": "floorplan", "title": "Office floor plan", "group": "police-1952", "rotate": -1,
+      "body": {
+        "svg": "floorplan.svg",
+        "caption": "Sketch by Sgt. Rizk, not to scale. First floor, 14 Rue Stamboul.",
+        "legend": [
+          { "n": 1, "label": "Desk and chair, deceased found here" },
+          { "n": 2, "label": "Brazier" },
+          { "n": 3, "label": "Electric fire (unplugged)" },
+          { "n": 4, "label": "Shuttered windows over Rue Stamboul" },
+          { "n": 5, "label": "Street door, spring latch" },
+          { "n": 6, "label": "Stair down to the café and the watchman's bench" }
+        ]
+      }
+    },
+    {
+      "id": "autopsy-1952", "kind": "lab", "title": "Autopsy summary, 1952", "group": "police-1952", "date": "12 January 1952", "rotate": 1,
+      "body": {
+        "lab": "Government Medico-Legal Department, Alexandria",
+        "ref": "Case 52/117",
+        "rows": [
+          { "test": "External examination", "result": "Cherry-pink lividity", "ref": "", "flag": "" },
+          { "test": "Carbon monoxide (spectroscope)", "result": "Positive", "ref": "qualitative", "flag": "" },
+          { "test": "Stomach", "result": "Coffee, bitter odour noted", "ref": "", "flag": "?" },
+          { "test": "Time of death (estimate)", "result": "Between 21.00 and 01.00", "ref": "", "flag": "" },
+          { "test": "Samples retained", "result": "Blood, stomach content, sealed", "ref": "", "flag": "" }
+        ],
+        "conclusion": [
+          "Death by asphyxia from charcoal fumes. Samples retained in sealed jars, no further analysis requested by police."
+        ],
+        "signed": "Dr. A. Shukri, medical examiner"
+      }
+    },
+    {
+      "id": "stmt-laila", "kind": "carbon", "title": "Statement: Laila Sabry", "group": "statements", "date": "11 January 1952", "rotate": -1.5,
+      "body": {
+        "heading": "STATEMENT OF WITNESS (carbon copy). Translated from Arabic.",
+        "lines": [
+          "Name: Laila Sabry, 26, bookkeeper to the deceased for four years. Address: Moharram Bey, with her mother.",
+          "I left the office at half past five on Thursday. Mr Karalis was well and was writing letters. He said his nephew might call in the evening.",
+          "I went straight home to my mother and stayed in all evening. I did not go out again.",
+          "On Friday I arrived at ten past eight, opened the door with my key, and found him. The room smelled of charcoal. I opened the shutters and ran for the watchman.",
+          "Mr Karalis never used a brazier. He had trouble with his chest and kept an electric fire."
+        ],
+        "signature": "L. Sabry (signed in Arabic)"
+      }
+    },
+    {
+      "id": "stmt-ferrante", "kind": "carbon", "title": "Statement: Dr Giulio Ferrante", "group": "statements", "date": "12 January 1952", "rotate": 2,
+      "body": {
+        "heading": "STATEMENT OF WITNESS (carbon copy). Taken in French.",
+        "lines": [
+          "Name: Dr Giulio Ferrante, 58, physician, Rue Nebi Daniel. Friend and doctor of the deceased for twenty years.",
+          "I called on Spyridon at about five o'clock on Thursday, a social visit, and left at half past five. He was in good spirits.",
+          "Later I was called to the hospital for a delivery and was there most of the night.",
+          "Spyridon had a weak chest. I had told him many times to keep away from smoke. I cannot explain the brazier."
+        ],
+        "signature": "G. Ferrante"
+      }
+    },
+    {
+      "id": "stmt-aris", "kind": "carbon", "title": "Statement: Aris Manos", "group": "statements", "date": "11 January 1952", "rotate": -2.5,
+      "body": {
+        "heading": "STATEMENT OF WITNESS (carbon copy). Taken in French.",
+        "lines": [
+          "Name: Aristidis (Aris) Manos, 29, nephew of the deceased, manager of the Karalis warehouse at Minet el Bassal.",
+          "I did not see my uncle on Thursday. We had spoken by telephone in the morning about bale weights.",
+          "From half past seven until after eleven I was at the Cercle des Négociants, Rue Fouad, playing bridge. Many members saw me.",
+          "My uncle was old fashioned and felt the cold. It does not surprise me that he lit a brazier.",
+          "My car was in the garage that night. I walked to the club."
+        ],
+        "signature": "A. Manos"
+      }
+    },
+    {
+      "id": "stmt-cafe", "kind": "typed", "title": "Statement: café boy", "group": "statements", "date": "11 January 1952", "rotate": 1,
+      "body": {
+        "letterhead": "ALEXANDRIA CITY POLICE . NOTE OF INTERVIEW",
+        "lines": [
+          "Name: Hassan Abdel Aal, 15, waiter at the Café Stamboul, ground floor of no. 14.",
+          "About ten to eight the khawaga Karalis called down from the stair for coffee. I took it up at a quarter past eight.",
+          "The door was half closed. I heard another voice inside, a young man's, speaking Greek. I left the tray on the small table by the door and did not go in.",
+          "In the morning I went up for the cups and the police were there."
+        ],
+        "signature": "Thumbprint, witnessed Sgt. Rizk"
+      }
+    },
+    {
+      "id": "watchman-notebook", "kind": "handwritten", "title": "Watchman's notebook", "group": "recovered", "date": "10 January 1952", "rotate": -3,
+      "body": {
+        "lang": "ar",
+        "dir": "rtl",
+        "writer": "Abdu Mursi, night watchman (bawab) of 14 Rue Stamboul",
+        "original": [
+          "الخميس ١٠ يناير",
+          "٦:١٠ الدكتور الطلياني طلع عند الخواجة",
+          "٦:٤٠ الدكتور نزل زعلان، صوتهم كان عالي",
+          "٧:٥٠ الخواجة طلب قهوة من القهوة اللي تحت",
+          "٨:٠٥ أفندي بالطو رمادي طلع، أظنه ابن أخت الخواجة بتاع المخزن",
+          "٨:٥٥ البالطو الرمادي نزل بسرعة",
+          "٩:٢٠ نفس الأفندي رجع ومعاه قفة متغطية، قال للخواجة",
+          "٩:٣٥ نزل ومشي، والشبابيك مقفولة"
+        ],
+        "translation": [
+          "Thursday 10 January",
+          "6.10 The Italian doctor went up to the khawaga.",
+          "6.40 The doctor came down angry, their voices were loud.",
+          "7.50 The khawaga ordered coffee from the café below.",
+          "8.05 An effendi in a grey overcoat went up. I think it is the khawaga's nephew, the one from the warehouse.",
+          "8.55 The grey overcoat came down in a hurry.",
+          "9.20 The same effendi came back carrying a covered basket, said it was for the khawaga.",
+          "9.35 He came down and left. The shutters were closed."
+        ],
+        "note": "Kept for the landlord. Never collected by the police in 1952. Donated by the watchman's grandson, 2024."
+      }
+    },
+    {
+      "id": "cafe-orders", "kind": "ledger", "title": "Café Stamboul order book", "group": "recovered", "date": "10 to 11 January 1952", "rotate": 2,
+      "body": {
+        "heading": "Café Stamboul, 14 Rue Stamboul. Orders on account.",
+        "columns": ["Time", "Customer", "Order", "Mill."],
+        "rows": [
+          ["19.10", "Tailor Kyriakos", "1 tea", "5"],
+          ["19.50", "Khawaga Karalis, 1st floor", "2 coffee, medium sugar", "16"],
+          ["20.15", "", "delivered (Hassan)", ""],
+          ["21.30", "Lawyer Bishay", "1 coffee, 1 water pipe", "18"],
+          ["11.I, 09.00", "Khawaga Karalis", "1 cup not returned, charged", "12"]
+        ],
+        "totals": "Account Karalis, January: 28 mill.",
+        "highlight": [1, 4]
+      }
+    },
+    {
+      "id": "charcoal-daybook", "kind": "handwritten", "title": "Charcoal seller's day-book", "group": "recovered", "date": "10 January 1952", "rotate": 1.5,
+      "body": {
+        "lang": "ar",
+        "dir": "rtl",
+        "writer": "Day-book of the charcoal shop of Mahmoud Abu Hashish, Kom el Dikka",
+        "original": [
+          "يوم الخميس ١٠ يناير ١٩٥٢",
+          "الصبح: ٤ أقة فحم لفرن عم سيد، ٢٠ مليم",
+          "العصر: ٢ أقة لبيت الست نبوية، ١٠ مليم",
+          "بعد العشاء حوالي ٩: مجمرة صغيرة و٢ أقة فحم للخواجة مانوس بتاع مخزن مينا البصل، دفع ٣٥ مليم، قال للحارس",
+          "قفلنا الدكان الساعة ١٠"
+        ],
+        "translation": [
+          "Thursday 10 January 1952",
+          "Morning: 4 okka of charcoal for uncle Sayed's bakery, 20 mill.",
+          "Afternoon: 2 okka for the house of Mrs Nabawiya, 10 mill.",
+          "After the evening prayer, about 9: one small brazier and 2 okka of charcoal for khawaga Manos of the Minet el Bassal warehouse. Paid 35 mill. Said it was for the night guard.",
+          "Shop closed at 10."
+        ],
+        "note": "Found among the papers of the Abu Hashish family, Kom el Dikka, and lent to the review."
+      }
+    },
+    {
+      "id": "club-register", "kind": "form", "title": "Cercle des Négociants: members' register", "group": "recovered", "date": "10 January 1952", "rotate": -1,
+      "body": {
+        "heading": "CERCLE DES NÉGOCIANTS . Rue Fouad . Registre des entrées et sorties",
+        "subheading": "Jeudi 10 janvier 1952. Members sign on entering and on leaving.",
+        "columns": ["Member", "Address", "In", "Out", "Signature"],
+        "rows": [
+          ["C. Benaki", "Rue Rosette", "18.45", "22.30", "C.B."],
+          ["A. Manos", "Kom el Dikka", "19.20", "19.55", "A. Manos"],
+          ["J. Mosseri", "Ramleh", "19.40", "23.15", "J.M."],
+          ["A. Manos", "Kom el Dikka", "21.55", "23.10", "A. Manos"],
+          ["E. Zervudachi", "Bulkeley", "20.10", "23.40", "E.Z."]
+        ],
+        "highlight": [1, 3],
+        "footer": "Porter on duty: Osman. Book lent from the club archive, now held by the Alexandria Chamber of Commerce library."
+      }
+    },
+    {
+      "id": "street-photo", "kind": "photo", "title": "Wedding photograph, Rue Stamboul", "group": "recovered", "date": "10 January 1952", "rotate": 3,
+      "body": {
+        "svg": "street-photo.svg",
+        "caption": "Studio Venus, Rue Stamboul. Wedding of the Haddad family leaving the church of St Catherine.",
+        "back": "Studio Venus. Neg. 2207. Jeudi 10.I.52, soir. 'Haddad, sortie'.",
+        "tags": [
+          { "n": 1, "x": 28, "y": 60, "label": "The wedding couple" },
+          { "n": 2, "x": 77, "y": 75, "label": "Grey saloon at the kerb outside no. 14. Look closely at the plate" },
+          { "n": 3, "x": 52, "y": 16, "label": "Bank clock reads 8.20" },
+          { "n": 4, "x": 90, "y": 40, "label": "Doorway of no. 14, the café sign above" }
+        ]
+      }
+    },
+    {
+      "id": "qr-traffic", "kind": "qr", "title": "Archive sticker: traffic registry", "group": "review-2024", "rotate": -2,
+      "body": {
+        "payload": "DOSSIERS:karalis:vehicle-registry",
+        "unlocks": "vehicle-registry",
+        "label": "Municipal Archive of Alexandria. Digitised series: Traffic Department motor registry, 1949 to 1953.",
+        "caption": "Scan to open the digitised record."
+      }
+    },
+    {
+      "id": "vehicle-registry", "kind": "form", "title": "Digitised motor registry", "group": "review-2024", "hidden": true, "rotate": 1,
+      "unlockedBy": { "qr": "qr-traffic" },
+      "body": {
+        "heading": "TRAFFIC DEPARTMENT, ALEXANDRIA . MOTOR VEHICLE REGISTER (scan, sheet 44)",
+        "subheading": "Private cars, numbers 4401 to 4420.",
+        "columns": ["No.", "Make", "Colour", "Owner", "Address"],
+        "rows": [
+          ["4415", "Fiat 1100", "Black", "Dr N. Wissa", "Rue Sesostris"],
+          ["4416", "Ford Prefect", "Green", "M. Cohen", "Camp de César"],
+          ["4417", "Hillman Minx", "Grey", "Aristidis Manos", "Kom el Dikka"],
+          ["4418", "Austin A40", "Cream", "Mme H. Rolo", "Rushdy"]
+        ],
+        "highlight": [2],
+        "footer": "Digitised 2023. Original volume: Municipal Archive, shelf T/49/3."
+      }
+    },
+    {
+      "id": "hospital-register", "kind": "form", "title": "Hospital admissions register", "group": "recovered", "date": "10 January 1952", "rotate": -1.5,
+      "body": {
+        "heading": "HOSPITAL OF ST ANDREW, ALEXANDRIA . Maternity ward admissions",
+        "subheading": "Night of 10 to 11 January 1952.",
+        "columns": ["Time", "Patient", "Physician", "Notes", "Nurse"],
+        "rows": [
+          ["19.15", "Mme Rosa Calvi", "Dr G. Ferrante", "Admitted in labour. Physician present.", "Sr. Agathe"],
+          ["21.40", "", "Dr G. Ferrante", "Forceps delivery, girl, 3.1 kg.", "Sr. Agathe"],
+          ["23.40", "", "Dr G. Ferrante", "Mother and child stable. Physician leaves.", "Sr. Agathe"]
+        ],
+        "highlight": [0, 1, 2],
+        "footer": "Countersigned by the night sister. The ward is a fifteen minute drive from Rue Stamboul."
+      }
+    },
+    {
+      "id": "patient-card", "kind": "handwritten", "title": "Dr Ferrante's patient card", "group": "estate", "date": "1951", "rotate": 2,
+      "body": {
+        "lang": "fr",
+        "dir": "ltr",
+        "writer": "Card from Dr Ferrante's practice, Karalis S.",
+        "original": [
+          "KARALIS Spyridon, né 1890.",
+          "Asthme chronique. Fumées et charbon strictement interdits. Radiateur électrique au bureau.",
+          "28.XII.51: insomnie. Prescrit Véronal 0,5 g, 20 comprimés.",
+          "Le patient refuse: 'je dors très bien, docteur'. Ordonnance laissée au bureau, non utilisée."
+        ],
+        "translation": [
+          "KARALIS Spyridon, born 1890.",
+          "Chronic asthma. Smoke and charcoal strictly forbidden. Electric fire at the office.",
+          "28 Dec 1951: insomnia. Prescribed Veronal 0.5 g, 20 tablets.",
+          "Patient refuses: 'I sleep very well, doctor'. Prescription left at the office, unused."
+        ],
+        "note": "Returned to the family with the estate papers."
+      }
+    },
+    {
+      "id": "pharmacy-register", "kind": "ledger", "title": "Pharmacy poisons register", "group": "recovered", "date": "January 1952", "rotate": -2,
+      "body": {
+        "heading": "PHARMACIE CENTRALE, Rue Chérif Pacha . Registre des toxiques (Table B)",
+        "columns": ["Date", "Substance", "Qty", "Prescriber", "Patient", "Collected by"],
+        "rows": [
+          ["5.I.52", "Morphine HCl", "10 amp.", "Dr Wissa", "M. Antoniadis", "Mme Antoniadis"],
+          ["8.I.52", "Véronal 0,5 g", "20 cp.", "Dr G. Ferrante", "S. Karalis", "A. Manos (neveu)"],
+          ["9.I.52", "Luminal", "30 cp.", "Dr Calvi", "R. Haddad", "R. Haddad"]
+        ],
+        "highlight": [1],
+        "totals": "Signature of the collector required by law."
+      }
+    },
+    {
+      "id": "promissory-note", "kind": "typed", "title": "Promissory note, Ferrante to Karalis", "group": "estate", "date": "15 July 1951", "rotate": 1,
+      "body": {
+        "letterhead": "BILLET À ORDRE",
+        "lines": [
+          "Alexandria, 15 July 1951. Good for £E 400.",
+          "On 15 January 1952 I promise to pay to the order of Mr Spyridon Karalis the sum of four hundred Egyptian pounds, value received in cash.",
+          "Pencilled on the back in Karalis's hand: '10.I: G. came again to ask for time. Told him no. Not a penny more until he stops going to the races.'"
+        ],
+        "signature": "G. Ferrante"
+      }
+    },
+    {
+      "id": "union-minutes", "kind": "handwritten", "title": "Women's society: minutes and attendance", "group": "recovered", "date": "10 January 1952", "rotate": -1,
+      "body": {
+        "lang": "ar",
+        "dir": "rtl",
+        "writer": "Minute book of the Alexandrian Women's Progress Society",
+        "original": [
+          "جمعية تقدم المرأة السكندرية، محضر جلسة الخميس ١٠ يناير ١٩٥٢، محرم بك",
+          "افتتاح الجلسة الساعة ٦ مساءً، الحاضرات ١٤",
+          "ليلى صبري: حضرت ٦:٠٠، انصرفت ١٠:١٥",
+          "٨:٣٠ كلمة الآنسة ليلى صبري عن أجور العاملات في محالج القطن",
+          "تبرع من الآنسة ليلى صبري: ١٢ جنيه",
+          "رفعت الجلسة الساعة ١٠:١٥. لا يذكر هذا المحضر خارج الجمعية"
+        ],
+        "translation": [
+          "Alexandrian Women's Progress Society, minutes of Thursday 10 January 1952, Moharram Bey.",
+          "Session opened at 6 pm, 14 present.",
+          "Laila Sabry: arrived 6.00, left 10.15.",
+          "8.30 Address by Miss Laila Sabry on the wages of women workers in the cotton gins.",
+          "Donation from Miss Laila Sabry: 12 pounds.",
+          "Session closed at 10.15. These minutes are not to be mentioned outside the society."
+        ],
+        "note": "Political meetings were watched closely in January 1952. Lent by the society's successor association."
+      }
+    },
+    {
+      "id": "newspaper-union", "kind": "newspaper", "title": "Clipping: Le Courrier d'Alexandrie", "group": "recovered", "date": "12 January 1952", "rotate": 2.5,
+      "body": {
+        "masthead": "Le Courrier d'Alexandrie",
+        "dateline": "Samedi 12 janvier 1952 . Translated from French",
+        "headline": "Women of the gins: a young bookkeeper speaks up",
+        "subhead": "A private meeting in Moharram Bey hears a call for equal wages",
+        "columns": [
+          "On Thursday evening, at a private house in Moharram Bey, some fourteen ladies met to discuss the condition of women employed in the cotton gins of the city.",
+          "The most applauded address, delivered at half past eight, came from a young bookkeeper of the Rue Stamboul, Mlle L. S., who spoke without notes for nearly an hour on wages and night shifts.",
+          "The meeting closed shortly after ten. We are told the police took an interest in the guest list."
+        ],
+        "also": "Also: Broker found dead in his office (page 3)."
+      }
+    },
+    {
+      "id": "petty-cash", "kind": "ledger", "title": "Office petty cash book", "group": "estate", "date": "January 1952", "rotate": -1.5,
+      "body": {
+        "heading": "Karalis & Co. Petty cash, January 1952. Kept by L. Sabry.",
+        "columns": ["Date", "Item", "Out (£E)", "Initials"],
+        "rows": [
+          ["3.I", "Stamps and telegrams", "0.85", "L.S."],
+          ["7.I", "Charcoal for the warehouse guard (A.M.)", "0.30", "S.K."],
+          ["10.I", "Advance on salary, L. Sabry", "12.00", "S.K. approved"],
+          ["10.I", "Coffee account, Café Stamboul", "0.28", "L.S."]
+        ],
+        "highlight": [2],
+        "totals": "Balance carried: £E 6.40"
+      }
+    },
+    {
+      "id": "warehouse-receipt", "kind": "form", "title": "Warehouse receipt No. 7741", "group": "estate", "date": "2 January 1952", "rotate": 1.5,
+      "body": {
+        "heading": "KARALIS & Co. MINET EL BASSAL . RÉCÉPISSÉ D'ENTREPÔT No. 7741",
+        "subheading": "Pledged to the Banque Commerciale d'Orient as security for an advance.",
+        "columns": ["Lot", "Description", "Bales", "Weight (qantar)"],
+        "rows": [
+          ["A-17", "Giza 30, long staple", "120", "880"],
+          ["A-27", "Giza 30, long staple", "70", "517"]
+        ],
+        "footer": "Signed for Karalis & Co.: S. Karalis. One of six receipts, Nos. 7741 to 7746, totalling £E 7,700 advanced.",
+        "signatureSvg": "k-questioned.svg"
+      }
+    },
+    {
+      "id": "bank-letter", "kind": "typed", "title": "Letter from the bank", "group": "estate", "date": "9 January 1952", "rotate": -2,
+      "body": {
+        "letterhead": "BANQUE COMMERCIALE D'ORIENT . Succursale d'Alexandrie",
+        "lines": [
+          "Alexandria, 9 January 1952. To Mr S. Karalis, Karalis & Co.",
+          "Dear Sir, during our annual inspection of the Minet el Bassal warehouse our inspector could not find lots A-17 and A-27, pledged under your receipts Nos. 7741 to 7746 (£E 7,700).",
+          "We would be grateful if you would confirm the receipts and the location of the bales by Monday 14 January, failing which we must refer the matter to our legal department.",
+          "Translated from French."
+        ],
+        "signature": "R. Suarès, branch manager"
+      }
+    },
+    {
+      "id": "sealed-letter", "kind": "sealed", "title": "Returned letter, still sealed", "group": "estate", "date": "10 January 1952", "rotate": 2,
+      "body": {
+        "seal": "ΣΚ",
+        "envelope": {
+          "to": "Kyrion Dimitrion Lekkas, Odos Solonos 12, Athinai",
+          "from": "S. Karalis, 14 Rue Stamboul, Alexandrie",
+          "postmark": "ALEXANDRIE 10.I.52 17h",
+          "stamp": "RETOUR À L'ENVOYEUR: DESTINATAIRE DÉCÉDÉ"
+        },
+        "lang": "el",
+        "letter": [
+          "Αγαπητέ μου Δημήτρη,",
+          "Βρήκα ότι έξι αποδείξεις αποθήκης με την υπογραφή μου δεν είναι δικές μου.",
+          "Το Κ έχει θηλιά, όπως το γράφει ο Άρης, και τα επτά έχουν γραμμή, γαλλικά. Εγώ ποτέ δεν τα γράφω έτσι.",
+          "Η τράπεζα ζητά απάντηση ως τη Δευτέρα.",
+          "Θα τον δω απόψε στις οκτώ στο γραφείο. Θα του δώσω ως τη Δευτέρα να τα διορθώσει, αλλιώς πηγαίνω ο ίδιος στην τράπεζα.",
+          "Αν μου συμβεί κάτι, κράτα αυτό το γράμμα.",
+          "Ο φίλος σου, Σπύρος"
+        ],
+        "translation": [
+          "My dear Dimitri,",
+          "I have found that six warehouse receipts bearing my signature are not mine.",
+          "The K has a loop, the way Aris writes it, and the sevens are crossed, French style. I never write them like that.",
+          "The bank wants an answer by Monday.",
+          "I will see him tonight at eight at the office. I will give him until Monday to put it right, otherwise I go to the bank myself.",
+          "If anything happens to me, keep this letter.",
+          "Your friend, Spyros"
+        ],
+        "note": "The addressee died on 6 January 1952. The letter came back unopened and stayed in the estate box for 72 years."
+      }
+    },
+    {
+      "id": "handwriting-comparison", "kind": "handwriting", "title": "Handwriting comparison", "group": "review-2024", "date": "February 2024", "rotate": -1,
+      "body": {
+        "heading": "Questioned document examination, receipts 7741 to 7746",
+        "columns": ["Known: S. Karalis (1950 contract)", "Questioned: receipt 7741", "Known: A. Manos (club register)"],
+        "rows": [
+          {
+            "label": "Capital K",
+            "cells": [
+              { "svg": "k-known.svg", "caption": "Two straight strokes, no loop" },
+              { "svg": "k-questioned.svg", "caption": "Looped head stroke" },
+              { "svg": "k-aris.svg", "caption": "Looped head stroke, from 'Kom el Dikka'" }
+            ]
+          },
+          {
+            "label": "Figure 7",
+            "cells": [
+              { "svg": "seven-known.svg", "caption": "Plain, never crossed" },
+              { "svg": "seven-questioned.svg", "caption": "Crossed, continental style" },
+              { "svg": "seven-aris.svg", "caption": "Crossed, from '19.55'" }
+            ]
+          }
+        ],
+        "conclusion": [
+          "The signatures on receipts 7741 to 7746 were not written by Spyridon Karalis.",
+          "The looped K and the crossed 7 match the known hand of Aristidis Manos in every specimen examined."
+        ],
+        "signed": "M. Ziada, forensic document examiner"
+      }
+    },
+    {
+      "id": "tox-2024", "kind": "lab", "title": "Toxicology re-reading, 2024", "group": "review-2024", "date": "26 February 2024", "rotate": 1.5,
+      "body": {
+        "lab": "Forensic Toxicology Unit, University Faculty of Medicine",
+        "ref": "Archive sample 52/117 (blood, stomach content)",
+        "rows": [
+          { "test": "Carboxyhaemoglobin (COHb)", "result": "11 per cent", "ref": "fatal above 50 per cent", "flag": "LOW" },
+          { "test": "Barbital (Veronal)", "result": "9.6 mg/100 ml", "ref": "fatal above 8 mg/100 ml", "flag": "HIGH" },
+          { "test": "Barbital in stomach content", "result": "Present, undissolved crystals", "ref": "", "flag": "HIGH" },
+          { "test": "Ethanol", "result": "Not detected", "ref": "", "flag": "" }
+        ],
+        "conclusion": [
+          "A carboxyhaemoglobin level of 11 per cent is not consistent with death by carbon monoxide. It suggests the subject breathed the fumes only briefly, or was already breathing very shallowly.",
+          "The barbital level is in the fatal range. Undissolved crystals in coffee point to the drug being taken in a drink, not as tablets.",
+          "Cause of death on re-reading: barbital poisoning. The brazier did not kill him."
+        ],
+        "signed": "Prof. Hoda Mansour"
+      }
+    },
+    {
+      "id": "qr-lab", "kind": "qr", "title": "Archive sticker: lab notebook", "group": "review-2024", "rotate": 2,
+      "body": {
+        "payload": "DOSSIERS:karalis:lab-notebook",
+        "unlocks": "lab-notebook",
+        "label": "Medico-Legal Department archive. Digitised: bench notebook, January 1952.",
+        "caption": "Scan to open the digitised record."
+      }
+    },
+    {
+      "id": "lab-notebook", "kind": "lab", "title": "Digitised bench notebook, 1952", "group": "review-2024", "hidden": true, "rotate": -1,
+      "unlockedBy": { "qr": "qr-lab" },
+      "body": {
+        "lab": "Medico-Legal Department, bench notebook (scan, p. 211)",
+        "ref": "12.I.52, case 52/117",
+        "rows": [
+          { "test": "Coffee cup from desk, residue", "result": "Bitter white crystals", "ref": "", "flag": "?" },
+          { "test": "Murexide test", "result": "Not done", "ref": "", "flag": "" },
+          { "test": "Note", "result": "Suggest barbiturate screen", "ref": "", "flag": "" }
+        ],
+        "conclusion": [
+          "Margin, different ink: 'Not required. Police satisfied, accident. A.S.'"
+        ],
+        "signed": "Bench assistant (initials illegible)"
+      }
+    },
+    {
+      "id": "sheet-aris", "kind": "suspect", "title": "Suspect sheet: Aris Manos", "group": "review-2024", "rotate": -2,
+      "body": { "suspectId": "aris" }
+    },
+    {
+      "id": "sheet-ferrante", "kind": "suspect", "title": "Suspect sheet: Dr Giulio Ferrante", "group": "review-2024", "rotate": 1,
+      "body": { "suspectId": "ferrante" }
+    },
+    {
+      "id": "sheet-laila", "kind": "suspect", "title": "Suspect sheet: Laila Sabry", "group": "review-2024", "rotate": 2.5,
+      "body": { "suspectId": "laila" }
+    }
+  ],
+  "timeline": {
+    "date": "Thursday 10 January 1952",
+    "start": "17:00",
+    "end": "24:00",
+    "lanes": [
+      { "id": "karalis", "label": "S. Karalis" },
+      { "id": "aris", "label": "Aris Manos", "suspectId": "aris" },
+      { "id": "ferrante", "label": "Dr Ferrante", "suspectId": "ferrante" },
+      { "id": "laila", "label": "Laila Sabry", "suspectId": "laila" }
+    ],
+    "facts": [
+      { "id": "k-coffee-order", "lane": "karalis", "kind": "moment", "start": "19:50", "label": "Orders two coffees", "place": "Office", "source": "cafe-orders" },
+      { "id": "k-coffee-delivered", "lane": "karalis", "kind": "moment", "start": "20:15", "label": "Coffee delivered, a young man's voice inside", "place": "Office", "source": "stmt-cafe" },
+      { "id": "k-death-window", "lane": "karalis", "kind": "window", "start": "21:00", "end": "24:00", "label": "Estimated time of death (21.00 to 01.00)", "source": "autopsy-1952" },
+      { "id": "a-claim-club", "lane": "aris", "kind": "statement", "start": "19:30", "end": "23:00", "label": "Claims: at the club all evening", "place": "Cercle des Négociants", "source": "stmt-aris" },
+      { "id": "a-club-in", "lane": "aris", "kind": "record", "start": "19:20", "end": "19:55", "label": "Signs in at the club", "place": "Cercle des Négociants", "source": "club-register" },
+      { "id": "a-club-gap", "lane": "aris", "kind": "absence", "start": "19:55", "end": "21:55", "label": "Signed out of the club", "place": "Not at the club", "source": "club-register" },
+      { "id": "a-office", "lane": "aris", "kind": "record", "start": "20:05", "end": "20:55", "label": "Grey overcoat at the office", "place": "Office", "source": "watchman-notebook" },
+      { "id": "a-car", "lane": "aris", "kind": "moment", "start": "20:20", "label": "Grey car at the kerb outside no. 14", "place": "Rue Stamboul", "source": "street-photo" },
+      { "id": "a-charcoal", "lane": "aris", "kind": "moment", "start": "21:05", "label": "Buys a brazier and charcoal", "place": "Kom el Dikka", "source": "charcoal-daybook" },
+      { "id": "a-basket", "lane": "aris", "kind": "record", "start": "21:20", "end": "21:35", "label": "Back at the office with a covered basket", "place": "Office", "source": "watchman-notebook" },
+      { "id": "a-club-back", "lane": "aris", "kind": "record", "start": "21:55", "end": "23:10", "label": "Signs in at the club again", "place": "Cercle des Négociants", "source": "club-register" },
+      { "id": "f-claim-visit", "lane": "ferrante", "kind": "statement", "start": "17:00", "end": "17:30", "label": "Claims: brief social visit", "place": "Office", "source": "stmt-ferrante", "conflictsWith": ["f-visit"] },
+      { "id": "f-visit", "lane": "ferrante", "kind": "record", "start": "18:10", "end": "18:40", "label": "At the office, loud argument", "place": "Office", "source": "watchman-notebook" },
+      { "id": "f-hospital", "lane": "ferrante", "kind": "record", "start": "19:15", "end": "23:40", "label": "At the hospital, delivery", "place": "Hospital of St Andrew", "source": "hospital-register" },
+      { "id": "l-claim-home", "lane": "laila", "kind": "statement", "start": "17:45", "end": "24:00", "label": "Claims: at home with her mother", "place": "Home", "source": "stmt-laila" },
+      { "id": "l-meeting", "lane": "laila", "kind": "record", "start": "18:00", "end": "22:15", "label": "At the women's society meeting", "place": "Society meeting, Moharram Bey", "source": "union-minutes" },
+      { "id": "l-speech", "lane": "laila", "kind": "moment", "start": "20:30", "label": "Gives the main address", "place": "Society meeting, Moharram Bey", "source": "newspaper-union" }
+    ]
+  },
+  "suspects": [
+    {
+      "id": "aris",
+      "name": "Aris Manos",
+      "role": "Nephew, warehouse manager",
+      "age": 29,
+      "address": "Kom el Dikka",
+      "sheet": [
+        "Son of Karalis's late sister Sofia. Runs the Karalis warehouse at Minet el Bassal.",
+        "Member of the Cercle des Négociants. Drives a grey car. Known at the bridge tables.",
+        "Sole heir after the deceased's death, per the 1949 will."
+      ],
+      "portrait": { "seed": 7, "skin": "#c9a27e", "hair": "#1d140e", "hairStyle": "slick", "mustache": true, "age": "young", "coat": "#6b6b6b" },
+      "openingLine": "(adjusts his cufflinks) Seventy years later and still you want to talk about my uncle. Naturally. Ask.",
+      "questions": [
+        { "id": "aris-q1", "text": "Where were you on the evening of 10 January?" },
+        { "id": "aris-q2", "text": "When did you last see your uncle?" },
+        { "id": "aris-q3", "text": "The club register says you signed out at 19.55. Where did you go?", "unlockedBy": "club-register" },
+        { "id": "aris-q4", "text": "Your car was photographed outside no. 14 at 8.20. Explain that.", "unlockedBy": "vehicle-registry" },
+        { "id": "aris-q5", "text": "Why did you buy a brazier and charcoal at nine that night?", "unlockedBy": "charcoal-daybook" },
+        { "id": "aris-q6", "text": "Who collected the Veronal from the Pharmacie Centrale on 8 January?", "unlockedBy": "pharmacy-register" },
+        { "id": "aris-q7", "text": "Who signed warehouse receipts 7741 to 7746?", "unlockedBy": "handwriting-comparison" },
+        { "id": "aris-q8", "text": "The 2024 lab found Veronal, not smoke, killed him. What was in his coffee?", "unlockedBy": "tox-2024" }
+      ]
+    },
+    {
+      "id": "ferrante",
+      "name": "Dr Giulio Ferrante",
+      "role": "Friend and physician",
+      "age": 58,
+      "address": "Rue Nebi Daniel",
+      "sheet": [
+        "Italian Alexandrian physician, friend of the deceased for twenty years.",
+        "Owed the deceased £E 400 on a note falling due 15 January 1952.",
+        "Prescribed Veronal for the deceased in December 1951."
+      ],
+      "portrait": { "seed": 23, "skin": "#d8b48f", "hair": "#bdb6aa", "hairStyle": "wavy", "glasses": true, "beard": true, "age": "old", "coat": "#3a3226" },
+      "openingLine": "(sighs, folds his hands) Ah. Spyridon. Madonna, what a waste. Ask what you like, caro, I am an old man with nothing left to hide. Almost nothing.",
+      "questions": [
+        { "id": "fer-q1", "text": "What time did you visit Karalis on 10 January?" },
+        { "id": "fer-q2", "text": "Did Karalis use a brazier?" },
+        { "id": "fer-q3", "text": "The watchman saw you arrive at 6.10 and leave angry at 6.40. Why lie about the time?", "unlockedBy": "watchman-notebook" },
+        { "id": "fer-q4", "text": "Tell me about the 400 pounds you owed him.", "unlockedBy": "promissory-note" },
+        { "id": "fer-q5", "text": "You prescribed him Veronal. Who else knew about it?", "unlockedBy": "patient-card" },
+        { "id": "fer-q6", "text": "Where were you after seven that evening?", "unlockedBy": "hospital-register" }
+      ]
+    },
+    {
+      "id": "laila",
+      "name": "Laila Sabry",
+      "role": "Bookkeeper",
+      "age": 26,
+      "address": "Moharram Bey",
+      "sheet": [
+        "Bookkeeper to the deceased for four years. Held a key to the office.",
+        "Found the body at 08.10 on 11 January.",
+        "Educated at the Lycée, reads French and English, keeps the office books."
+      ],
+      "portrait": { "seed": 41, "skin": "#b98b62", "hair": "#120c08", "hairStyle": "bun", "age": "young", "coat": "#2f3b45" },
+      "openingLine": "(straightens the papers in front of her) Good afternoon. I told the police everything in 1952. I will tell you the same, if you are polite.",
+      "questions": [
+        { "id": "lai-q1", "text": "Where did you go after leaving the office at 5.30?" },
+        { "id": "lai-q2", "text": "Who was expected at the office that evening?" },
+        { "id": "lai-q3", "text": "The society minutes say you spoke at 8.30 in Moharram Bey. Why say you were home?", "unlockedBy": "union-minutes" },
+        { "id": "lai-q4", "text": "What was the 12 pound advance for?", "unlockedBy": "petty-cash" },
+        { "id": "lai-q5", "text": "Did Karalis ever mention trouble with the bank?", "unlockedBy": "bank-letter" }
+      ]
+    }
+  ],
+  "hints": [
+    {
+      "id": "h-accident", "question": "Was it really an accident?",
+      "hints": [
+        { "id": "h-acc-1", "tier": 1, "text": "Did Karalis even use a brazier? Check what his doctor and his bookkeeper say about his chest." },
+        { "id": "h-acc-2", "tier": 2, "text": "The 2024 toxicology re-reading gives a carbon monoxide figure. Compare it with the fatal level." },
+        { "id": "h-acc-3", "tier": 3, "text": "11 per cent carbon monoxide cannot kill. Veronal in his coffee did. The brazier was staged afterwards." }
+      ]
+    },
+    {
+      "id": "h-visitors", "question": "Who was in the office that evening?",
+      "hints": [
+        { "id": "h-vis-1", "tier": 1, "text": "The café order book records how many coffees went up." },
+        { "id": "h-vis-2", "tier": 2, "text": "The night watchman kept a notebook that the police never collected. Read the translation." },
+        { "id": "h-vis-3", "tier": 3, "text": "The doctor came at 6.10 and left at 6.40. A man in a grey overcoat came at 8.05 and came back at 9.20 with a basket." }
+      ]
+    },
+    {
+      "id": "h-alibi", "question": "Does Aris's alibi hold?",
+      "hints": [
+        { "id": "h-ali-1", "tier": 1, "text": "Members of the Cercle signed out as well as in." },
+        { "id": "h-ali-2", "tier": 2, "text": "Use the magnifier on the wedding photograph, then scan the traffic registry sticker." },
+        { "id": "h-ali-3", "tier": 3, "text": "Aris left the club at 19.55 and came back at 21.55. His grey Hillman, plate 4417, was outside no. 14 at 8.20." }
+      ]
+    },
+    {
+      "id": "h-motive", "question": "Why would anyone want Karalis dead?",
+      "hints": [
+        { "id": "h-mot-1", "tier": 1, "text": "Read the letter from the bank, then break the seal on the returned letter." },
+        { "id": "h-mot-2", "tier": 2, "text": "Compare the K and the 7 on the warehouse receipt with known handwriting." },
+        { "id": "h-mot-3", "tier": 3, "text": "Aris forged six receipts worth £E 7,700. His uncle found out and gave him until Monday." }
+      ]
+    },
+    {
+      "id": "h-clear", "question": "Who can be cleared?",
+      "hints": [
+        { "id": "h-clr-1", "tier": 1, "text": "Both the doctor and the bookkeeper lied about their evening. Lies are not proof of murder." },
+        { "id": "h-clr-2", "tier": 2, "text": "Find where each of them was between 8 and 10 pm. One record is from a hospital, one from a meeting." },
+        { "id": "h-clr-3", "tier": 3, "text": "Ferrante was delivering a baby from 19.15 to 23.40. Laila spoke at a women's meeting at 20.30 and stayed until 22.15." }
+      ]
+    }
+  ],
+  "accusation": {
+    "how": [
+      { "id": "how-accident", "label": "He lit a brazier himself and was overcome by the fumes (accident)" },
+      { "id": "how-veronal-staged", "label": "Veronal in his coffee, then a brazier staged to look like an accident" },
+      { "id": "how-blow", "label": "Struck on the head, then the room was shuttered" },
+      { "id": "how-own-pills", "label": "He took too many of his own sleeping tablets by mistake" },
+      { "id": "how-smothered", "label": "Smothered with a cushion while asleep" }
+    ],
+    "why": [
+      { "id": "why-forgery", "label": "To stop him exposing forged warehouse receipts to the bank" },
+      { "id": "why-debt", "label": "To escape a debt of 400 pounds" },
+      { "id": "why-politics", "label": "To keep a political meeting hidden from the police" },
+      { "id": "why-inherit", "label": "Simply to inherit the business sooner" },
+      { "id": "why-quarrel", "label": "A quarrel over a woman" }
+    ],
+    "proofCount": 3
+  }
+}
