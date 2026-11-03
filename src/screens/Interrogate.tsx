@@ -5,6 +5,7 @@ import { interrogate } from '../api';
 import { Portrait } from '../lib/portrait';
 import { assetUrl } from '../api';
 import { go, useRoute } from '../lib/router';
+import { sfx } from '../lib/sound';
 
 const TECH_LABEL: Record<string, string> = { open: 'open question', closed: 'closed question', leading: 'leading question', coercive: 'pressure' };
 const TECH_HELP: Record<string, string> = {
@@ -93,7 +94,7 @@ function Room({ suspectId }: { suspectId: string }) {
     await interrogate(
       { caseId: kase.id, suspectId, history: history.map(({ role, text, shownDocumentId }) => ({ role, text, shownDocumentId })), playerMessage: playerTurn.text, shownDocumentId: shown ?? undefined },
       {
-        onText: (t) => { acc += t; setLive(acc); },
+        onText: (t) => { acc += t; setLive(acc); sfx.key(); },
         onDone: (d) => {
           const s = caseStore(kase.id).getState();
           s.updateChat(suspectId, (c) => ({
@@ -104,6 +105,7 @@ function Room({ suspectId }: { suspectId: string }) {
             ],
             caught: d.caughtLieIds, mood: d.mood, confessed: c.confessed || d.confessed,
           }));
+          if (d.newlyCaught.length || d.unreliable || d.confessed) setTimeout(() => sfx.stamp(), 150); else sfx.ding();
           for (const n of d.newlyCaught) s.addCard({ kind: 'caught', title: `CAUGHT${n.quality === 'locked' ? ' (LOCKED IN)' : ''}: ${suspect.name}`, text: n.card, suspectId });
           if (d.unreliable) s.addCard({ kind: 'warning', title: `UNRELIABLE: ${suspect.name}`, text: `${suspect.name} gave an admission under pressure. Admissions obtained by threats are not evidence, and innocent people make them.`, suspectId });
           if (d.confessed) s.addCard({ kind: 'caught', title: `CONFESSION: ${suspect.name}`, text: `${suspect.name} confessed in the reconstruction room. Read the transcript in your notes.`, suspectId });

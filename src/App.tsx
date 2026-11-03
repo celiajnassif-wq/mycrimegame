@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useSyncExternalStore } from 'react';
+import { sound } from './lib/sound';
 import type { CaseData } from '../shared/types';
 import { fetchCase, fetchCases } from './api';
 import { CaseCtx } from './lib/caseContext';
@@ -48,6 +49,17 @@ function Home() {
   );
 }
 
+function SoundControls() {
+  const muted = useSyncExternalStore(sound.subscribe, () => sound.muted);
+  const rain = useSyncExternalStore(sound.subscribe, () => sound.rain);
+  return (
+    <div className="sound-controls">
+      <button type="button" className="icon-btn" aria-pressed={!muted} onClick={() => sound.setMuted(!muted)} title={muted ? 'Sound off' : 'Sound on'} aria-label={muted ? 'Turn sound on' : 'Turn sound off'}>{muted ? '🔇' : '🔊'}</button>
+      <button type="button" className="icon-btn" aria-pressed={rain} disabled={muted} onClick={() => sound.setRain(!rain)} title="Rain on the window" aria-label={rain ? 'Stop the rain' : 'Rain on the window'}>{rain ? '🌧' : '☁'}</button>
+    </div>
+  );
+}
+
 function CaseShell({ kase, screen }: { kase: CaseData; screen: Screen }) {
   const st = caseStore(kase.id)();
   const openDoc = useUI((u) => u.openDoc);
@@ -70,7 +82,10 @@ function CaseShell({ kase, screen }: { kase: CaseData; screen: Screen }) {
             <span className="chip-title">{kase.title}</span>
             <span className="chip-sub">{kase.place}, {kase.date}</span>
           </button>
-          <div className="counter" aria-live="polite">{st.mode === 'detective' && <span className="mode-badge">DETECTIVE MODE</span>}<span className="stamp-mini">READ</span> {readCount} / {docs.length}</div>
+          <div className="top-right">
+            <SoundControls />
+            <div className="counter" aria-live="polite">{st.mode === 'detective' && <span className="mode-badge">DETECTIVE MODE</span>}<span className="stamp-mini">READ</span> {readCount} / {docs.length}</div>
+          </div>
           <nav className="tabs" aria-label="Case sections">
             {TABS.map((t) => (
               <a key={t.id} href={hrefFor(kase.id, t.id)} className={`tab ${screen === t.id ? 'active' : ''}`} aria-current={screen === t.id ? 'page' : undefined}>
@@ -98,6 +113,12 @@ function CaseShell({ kase, screen }: { kase: CaseData; screen: Screen }) {
 
 export default function App() {
   const route = useRoute();
+  useEffect(() => {
+    const wake = () => sound.wake();
+    window.addEventListener('pointerdown', wake, { once: true });
+    window.addEventListener('keydown', wake, { once: true });
+    return () => { window.removeEventListener('pointerdown', wake); window.removeEventListener('keydown', wake); };
+  }, []);
   const [kase, setKase] = useState<CaseData | null>(null);
   const [error, setError] = useState<string | null>(null);
   useEffect(() => {

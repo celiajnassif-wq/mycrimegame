@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import type { DocProps } from '../types';
 import { Translatable } from '../Translatable';
+import { sfx } from '../../lib/sound';
 
 export default function Sealed({ doc, ctx }: DocProps) {
   const b = doc.body;
   const broken = ctx.seals.includes(doc.id);
   const [cracking, setCracking] = useState(false);
-  const breakIt = () => { setCracking(true); setTimeout(() => ctx.breakSeal(doc.id), 700); };
+  const breakIt = () => { sfx.crack(); setCracking(true); setTimeout(() => ctx.breakSeal(doc.id), 700); };
   return (
     <div className="sealed-doc">
       <div className={`envelope ${broken ? 'open' : ''}`}>

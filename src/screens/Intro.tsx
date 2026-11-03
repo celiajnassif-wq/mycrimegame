@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useKase, useCS } from '../lib/caseContext';
 import { go, DEMO } from '../lib/router';
+import { sfx } from '../lib/sound';
 
 export default function Intro() {
   const kase = useKase();
@@ -10,6 +11,7 @@ export default function Intro() {
   const setMode = useCS((s) => s.setMode);
   const [phase, setPhase] = useState<'closed' | 'untying' | 'open'>(opened ? 'open' : 'closed');
   const untie = () => {
+    sfx.twine();
     setPhase('untying');
     setTimeout(() => setPhase('open'), window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 1300);
   };

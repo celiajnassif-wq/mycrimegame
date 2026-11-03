@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import qrcode from 'qrcode-generator';
 import type { DocProps } from '../types';
+import { sfx } from '../../lib/sound';
 
 export default function QR({ doc, ctx }: DocProps) {
   const b = doc.body;
@@ -16,7 +17,7 @@ export default function QR({ doc, ctx }: DocProps) {
     return { n, d: rects.join('') };
   }, [b.payload]);
   const target = ctx.kase.documents.find((d) => d.id === b.unlocks);
-  const scan = () => { setScanning(true); setTimeout(() => { setScanning(false); ctx.scan(doc.id); }, 900); };
+  const scan = () => { setScanning(true); setTimeout(() => { setScanning(false); sfx.beep(); ctx.scan(doc.id); }, 900); };
   return (
     <div className="qr-doc">
       <p className="qr-label">{b.label}</p>

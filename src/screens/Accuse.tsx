@@ -5,6 +5,7 @@ import { accuse, giveUp } from '../api';
 import { Portrait } from '../lib/portrait';
 import { POINTS } from '../../shared/scoring';
 import Debrief from './Debrief';
+import { sfx } from '../lib/sound';
 
 const STEPS = ['Who', 'How', 'Why', 'Proof', 'File'] as const;
 
@@ -88,6 +89,7 @@ export default function Accuse() {
     setBusy(true); setError(null);
     try {
       const res = await accuse({ caseId: kase.id, who, how, why, proof, hintsUsed: st.hints.length, wrongCharges: st.wrongCharges });
+      sfx.stamp();
       if (res.outcome === 'refused') { st.addRefusal(who, res.text); setRefusal({ text: res.text, clearedBy: res.clearedBy }); }
       else st.setResult({ ...res, charge: { who, how, why, proof }, at: Date.now() });
     } catch (e) { setError((e as Error).message); }

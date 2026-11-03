@@ -4,6 +4,7 @@ import { useDocCtx } from '../lib/useDocCtx';
 import { DocumentView, registry } from '../docs/registry';
 import { isAvailable, useUI, type DocHighlight, type HighlightColor } from '../store';
 import { COLORS, anchorToRange, rangeToAnchor, supportsPainting } from '../lib/highlight';
+import { sfx } from '../lib/sound';
 
 type Anchor = { start: number; end: number; text: string };
 
@@ -32,7 +33,7 @@ export default function Reader({ docId, onClose }: { docId: string; onClose: () 
   const docHighlights = st.highlights.filter((h) => h.docId === docId);
   const docNotes = st.cards.filter((c) => c.kind === 'note' && c.docId === docId);
 
-  useEffect(() => { if (doc && isAvailable(doc, st)) st.markRead(doc.id); }, [docId]); // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(() => { if (doc && isAvailable(doc, st)) { st.markRead(doc.id); sfx.paper(); } }, [docId]); // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => {
     prevFocus.current = document.activeElement;
     closeRef.current?.focus();
