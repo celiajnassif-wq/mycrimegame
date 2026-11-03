@@ -3,16 +3,15 @@ import { useEffect, useState } from 'react';
 export type Screen = 'intro' | 'desk' | 'timeline' | 'interrogate' | 'board' | 'notes' | 'hints' | 'accuse';
 export interface Route { caseId: string | null; screen: Screen; param?: string }
 
-// The static prototype holds one case and uses plain hashes (#desk, #interrogate-aris).
+// The static prototype uses plain hashes: #karalis, #karalis--desk, #karalis--interrogate--aris.
 export const DEMO = import.meta.env.MODE === 'demo';
-const DEMO_CASE = (import.meta.env.VITE_DEMO_CASE as string | undefined) ?? 'karalis';
 
 export function parse(hash: string): Route {
   if (DEMO) {
     const name = hash.replace(/^#/, '');
-    if (!name) return { caseId: DEMO_CASE, screen: 'intro' };
-    const [screen, ...rest] = name.split('-');
-    return { caseId: DEMO_CASE, screen: screen as Screen, param: rest.join('-') || undefined };
+    if (!name) return { caseId: null, screen: 'intro' };
+    const [caseId, screen, param] = name.split('--');
+    return { caseId, screen: (screen as Screen) || 'intro', param: param || undefined };
   }
   const parts = hash.replace(/^#\/?/, '').split('/').filter(Boolean);
   if (parts[0] !== 'case' || !parts[1]) return { caseId: null, screen: 'intro' };
@@ -20,7 +19,7 @@ export function parse(hash: string): Route {
 }
 
 export function hrefFor(caseId: string | null, screen: Screen = 'intro', param?: string): string {
-  if (DEMO) return screen === 'intro' && !param ? '#' : `#${screen}${param ? '-' + param : ''}`;
+  if (DEMO) return !caseId ? '#' : `#${caseId}${screen === 'intro' && !param ? '' : `--${screen}${param ? '--' + param : ''}`}`;
   return caseId ? `#/case/${caseId}/${screen}${param ? '/' + param : ''}` : '#/';
 }
 

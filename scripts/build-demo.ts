@@ -11,7 +11,7 @@ const script = readFileSync(join(dir, js[0]), 'utf8').replace(/<\/script/gi, '<\
 const style = css.map((f) => readFileSync(join(dir, f), 'utf8')).join('\n');
 const fonts = readFileSync('index.html', 'utf8').match(/<link href="https:\/\/fonts\.googleapis\.com[^>]+>/)?.[0] ?? '';
 
-const page = `<title>The Karalis File</title>
+const page = `<title>Dossiers</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="theme-color" content="#2a1a10">
 ${fonts}

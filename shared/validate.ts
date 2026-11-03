@@ -19,7 +19,9 @@ function findEmDashes(value: unknown, path: string, out: string[]) {
   }
 }
 
-export function validateCase(c: CaseData, s: SecretData, assetNames: string[] = []): ValidationResult {
+export function validateCase(c: CaseData, s: SecretData, assetNames?: string[]): ValidationResult {
+  const checkAssets = Array.isArray(assetNames);
+  const hasAsset = (f: string) => !checkAssets || assetNames!.includes(f);
   const errors: string[] = [];
   const warnings: string[] = [];
   const ajv = new Ajv({ allErrors: true, strict: false });
@@ -63,6 +65,7 @@ export function validateCase(c: CaseData, s: SecretData, assetNames: string[] = 
       if (!d.hidden) warnings.push(`document ${d.id}: has unlockedBy but is not hidden`);
     }
     if (d.hidden && !d.unlockedBy) errors.push(`document ${d.id}: hidden but has no unlockedBy rule, it can never appear`);
+    if (typeof d.body.signatureSvg === 'string' && !hasAsset(d.body.signatureSvg)) errors.push(`document ${d.id}: missing asset "${d.body.signatureSvg}"`);
     if (d.kind === 'qr') {
       docRef(d.body.unlocks, `qr ${d.id} body.unlocks`);
       const target = byId.get(d.body.unlocks);
@@ -71,11 +74,11 @@ export function validateCase(c: CaseData, s: SecretData, assetNames: string[] = 
     if (d.kind === 'suspect' && !suspectIds.has(d.body.suspectId)) errors.push(`document ${d.id}: unknown suspect "${d.body.suspectId}"`);
     for (const key of ['svg']) {
       const f = d.body[key];
-      if (typeof f === 'string' && assetNames.length && !assetNames.includes(f)) errors.push(`document ${d.id}: missing asset "${f}"`);
+      if (typeof f === 'string' && !hasAsset(f)) errors.push(`document ${d.id}: missing asset "${f}"`);
     }
     if (d.kind === 'handwriting') {
       for (const row of d.body.rows as { cells: { svg?: string }[] }[]) {
-        for (const cell of row.cells) if (cell.svg && assetNames.length && !assetNames.includes(cell.svg)) errors.push(`document ${d.id}: missing asset "${cell.svg}"`);
+        for (const cell of row.cells) if (cell.svg && !hasAsset(cell.svg)) errors.push(`document ${d.id}: missing asset "${cell.svg}"`);
       }
     }
   }
@@ -109,7 +112,7 @@ export function validateCase(c: CaseData, s: SecretData, assetNames: string[] = 
   // suspects
   for (const x of c.suspects) {
     for (const q of x.questions) docRef(q.unlockedBy, `suspect ${x.id} question ${q.id}`);
-    if (x.portraitAsset && assetNames.length && !assetNames.includes(x.portraitAsset)) errors.push(`suspect ${x.id}: missing portrait asset "${x.portraitAsset}"`);
+    if (x.portraitAsset && !hasAsset(x.portraitAsset)) errors.push(`suspect ${x.id}: missing portrait asset "${x.portraitAsset}"`);
     if (!s.suspects[x.id]) errors.push(`suspect ${x.id}: no entry in secret.json suspects`);
   }
   for (const id of Object.keys(s.suspects)) if (!suspectIds.has(id)) errors.push(`secret suspect "${id}" is not in case.json`);

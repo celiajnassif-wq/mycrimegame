@@ -21,5 +21,8 @@
 
 14. [x] Investigation realism: question technique labels, locked-in vs adapted lies (Strategic Use of Evidence), unreliable admissions under pressure, hypothesis board (ACH), investigator profile debrief, detective mode. 32 unit tests, 10 Playwright tests.
 15. [x] Raster assets (png, jpg, webp) supported in server and prototype. DESIGN.md with vision and roadmap.
+16. [x] Deployment: render.yaml (one-click Render blueprint) and Dockerfile.
+17. [x] Procedural sound (typewriter, paper, stamps, wax, scanner, rain), mute and rain toggles. Sticky top bar fixed.
+18. [x] Second case, Studio Phénix (Beirut, 1974): 33 documents, a contaminated confession, a hidden envelope and contact sheet. Validator now fails a case with missing images. Prototype has a case list. 32 unit tests, 12 Playwright tests.
 
 Next ideas: Beirut 1974 or Seoul 1988 case via the Forge; sound (typewriter, wax crack); print-friendly solution memo.

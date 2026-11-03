@@ -56,9 +56,8 @@ export default function Intro() {
       </div>
       {phase === 'closed' && <button type="button" className="btn primary untie" onClick={untie} autoFocus>Untie the twine</button>}
       {phase !== 'closed' && <p className="sr-only" role="status">{phase === 'open' ? 'The folder is open.' : 'Untying the twine.'}</p>}
-      {DEMO
-        ? <p className="demo-note">Prototype build. Suspects answer from scripted lines here; the full game puts Claude behind each witness.</p>
-        : <button type="button" className="btn ghost back-home" onClick={() => go(null)}>All cases</button>}
+      {DEMO && <p className="demo-note">Prototype build. Suspects answer from scripted lines here; the full game puts Claude behind each witness.</p>}
+      <button type="button" className="btn ghost back-home" onClick={() => go(null)}>All cases</button>
     </main>
   );
 }

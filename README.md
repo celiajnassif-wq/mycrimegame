@@ -4,8 +4,8 @@ A cold-case detective game for one player or a game night. Read a desk of period
 AI-driven suspects in free text, pin claims against records on a timeline, then file a charge: who, how,
 why, and three records that prove it.
 
-The first case, **The Karalis File** (Alexandria, 10 January 1952, reopened 2024), ships with 34 documents,
-three suspects, a 17-fact timeline and tiered hints.
+Two cases ship: **The Karalis File** (Alexandria, 1952) and **Studio Phénix** (Beirut, 1974). Each has 30+ period
+documents, three suspects with their own voices and lies, a timeline and tiered hints.
 
 ## Run it
 

@@ -3,7 +3,7 @@ import { sound } from './lib/sound';
 import type { CaseData } from '../shared/types';
 import { fetchCase, fetchCases } from './api';
 import { CaseCtx } from './lib/caseContext';
-import { go, hrefFor, useRoute, DEMO, type Screen } from './lib/router';
+import { go, hrefFor, useRoute, type Screen } from './lib/router';
 import { caseStore, useUI, availableDocs } from './store';
 import Intro from './screens/Intro';
 import Desk from './screens/Desk';
@@ -78,7 +78,7 @@ function CaseShell({ kase, screen }: { kase: CaseData; screen: Screen }) {
     <CaseCtx.Provider value={kase}>
       <div className="shell">
         <header className="topbar">
-          <button type="button" className="case-chip" onClick={() => go(null)} aria-label={DEMO ? 'Back to the case folder' : 'Back to all cases'}>
+          <button type="button" className="case-chip" onClick={() => go(null)} aria-label="Back to all cases">
             <span className="chip-title">{kase.title}</span>
             <span className="chip-sub">{kase.place}, {kase.date}</span>
           </button>

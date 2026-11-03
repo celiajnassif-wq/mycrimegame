@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#ece8de"/>
+  <g font-family="monospace" font-size="5" fill="#8a6a2a">
+    <text x="8" y="16">KODAK TRI-X PAN 400</text><text x="300" y="16">14.X.73</text>
+    <text x="8" y="112">KODAK TRI-X PAN 400</text><text x="8" y="208">KODAK TRI-X PAN 400</text>
+  </g>
+  <g fill="#1a1816">
+    <rect x="6" y="22" width="388" height="84"/><rect x="6" y="118" width="388" height="84"/><rect x="6" y="214" width="388" height="80"/>
+  </g>
+  <g fill="#ece8de" opacity="0.6">
+    <rect x="10" y="24" width="4" height="3"/><rect x="30" y="24" width="4" height="3"/><rect x="50" y="24" width="4" height="3"/><rect x="370" y="24" width="4" height="3"/>
+  </g>
+  <!-- frames 1 to 4: wedding, daylight -->
+  <g>
+    <rect x="12" y="30" width="88" height="68" fill="#cfc8ba"/>
+    <rect x="108" y="30" width="88" height="68" fill="#c9c2b3"/>
+    <rect x="204" y="30" width="88" height="68" fill="#d2cbbd"/>
+    <rect x="300" y="30" width="88" height="68" fill="#c6bfb0"/>
+    <g fill="#3a352f"><path d="M40 96 L46 60 Q52 52 58 60 L64 96 Z"/><circle cx="52" cy="54" r="5"/></g>
+    <g fill="#f4f1ea"><path d="M60 96 L66 62 Q72 54 78 62 L84 96 Z"/><circle cx="72" cy="56" r="5" fill="#a89a88"/></g>
+    <g fill="#3a352f"><path d="M130 96 L136 64 Q142 56 148 64 L154 96 Z"/><circle cx="142" cy="58" r="5"/><path d="M160 96 L164 66 Q170 58 176 66 L180 96 Z" fill="#f4f1ea"/></g>
+    <g fill="#5a544a"><rect x="214" y="70" width="70" height="26"/><circle cx="230" cy="64" r="5"/><circle cx="246" cy="62" r="5"/><circle cx="262" cy="64" r="5"/></g>
+    <g fill="#3a352f"><path d="M330 96 L338 58 Q344 50 350 58 L358 96 Z"/><circle cx="344" cy="52" r="6"/></g>
+  </g>
+  <!-- frames 5 to 8: night, Ain el-Mreisse -->
+  <g>
+    <rect x="12" y="126" width="88" height="68" fill="#2a2724"/>
+    <rect x="108" y="126" width="88" height="68" fill="#24221f"/>
+    <rect x="204" y="126" width="88" height="68" fill="#2c2926"/>
+    <rect x="300" y="126" width="88" height="68" fill="#22201d"/>
+    <!-- 5: street lamp, empty street -->
+    <line x1="60" y1="130" x2="60" y2="190" stroke="#4a4540" stroke-width="2"/><circle cx="60" cy="132" r="4" fill="#e8e0c8"/><path d="M40 192 L80 192 L66 136 L54 136 Z" fill="#e8e0c8" opacity="0.12"/>
+    <!-- 6: blurred headlights -->
+    <ellipse cx="140" cy="168" rx="12" ry="5" fill="#f2ead2" opacity="0.8"/><ellipse cx="166" cy="168" rx="12" ry="5" fill="#f2ead2" opacity="0.8"/>
+    <!-- 7: the car over the bicycle, plate readable -->
+    <line x1="276" y1="128" x2="276" y2="190" stroke="#4a4540" stroke-width="2"/><circle cx="276" cy="130" r="4" fill="#e8e0c8"/>
+    <path d="M232 192 L292 192 L282 134 L270 134 Z" fill="#e8e0c8" opacity="0.14"/>
+    <path d="M214 178 L220 164 Q226 156 240 155 L262 155 Q274 156 278 166 L286 170 Q290 172 290 180 Z" fill="#6f7a6a" stroke="#0e0d0c" stroke-width="1.2"/>
+    <path d="M226 165 L232 158 L246 158 L246 165 Z M250 165 L250 158 L262 158 L270 165 Z" fill="#1d1c1a"/>
+    <circle cx="228" cy="181" r="6" fill="#0e0d0c"/><circle cx="276" cy="181" r="6" fill="#0e0d0c"/>
+    <rect x="244" y="174" width="18" height="5" fill="#ece6d6" stroke="#111" stroke-width="0.4"/>
+    <text x="253" y="178" font-family="monospace" font-size="3.6" text-anchor="middle" fill="#111">124317</text>
+    <g stroke="#cfc8b8" stroke-width="1" fill="none"><circle cx="214" cy="188" r="5"/><circle cx="230" cy="190" r="5"/><path d="M214 188 L222 182 L230 190 M222 182 L226 180"/></g>
+    <!-- 8: tail lights moving away -->
+    <ellipse cx="338" cy="166" rx="5" ry="3" fill="#d8d0b8" opacity="0.9"/><ellipse cx="356" cy="166" rx="5" ry="3" fill="#d8d0b8" opacity="0.9"/>
+    <path d="M320 166 L334 166 M360 166 L376 166" stroke="#d8d0b8" stroke-width="1" opacity="0.5"/>
+  </g>
+  <!-- frames 9 to 12: unexposed -->
+  <g fill="#141210"><rect x="12" y="220" width="88" height="68"/><rect x="108" y="220" width="88" height="68"/><rect x="204" y="220" width="88" height="68"/><rect x="300" y="220" width="88" height="68"/></g>
+  <g font-family="monospace" font-size="5" fill="#d8c070">
+    <text x="14" y="104">1</text><text x="110" y="104">2</text><text x="206" y="104">3</text><text x="302" y="104">4</text>
+    <text x="14" y="200">5</text><text x="110" y="200">6</text><text x="206" y="200">7</text><text x="302" y="200">8</text>
+  </g>
+  <path d="M200 120 Q250 112 296 124" stroke="#b22222" stroke-width="1.6" fill="none" opacity="0.7"/>
+  <ellipse cx="248" cy="160" rx="46" ry="36" fill="none" stroke="#b22222" stroke-width="1.4" opacity="0.6"/>
+</svg>

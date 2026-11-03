@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <g fill="none" stroke="#1d2a4a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M40 30 L364 32 L362 262 L42 260 Z"/>
+    <path d="M200 31 L201 262"/>
+    <path d="M201 150 L363 151"/>
+    <path d="M120 260 L120 268 M168 261 L168 268"/>
+    <path d="M120 262 Q140 236 168 262" stroke-dasharray="3 3"/>
+    <path d="M201 196 L201 226" stroke="#f4ecd8" stroke-width="5"/>
+    <path d="M201 196 Q226 200 228 224"/>
+    <path d="M201 64 L201 96" stroke="#f4ecd8" stroke-width="5"/>
+    <path d="M201 64 Q224 68 226 94"/>
+    <rect x="330" y="60" width="24" height="26"/>
+    <path d="M300 230 L356 230 L356 250 L300 250 Z"/>
+    <path d="M220 100 L300 100 L300 112 L220 112 Z"/>
+    <path d="M42 30 L42 260" stroke-width="5"/>
+  </g>
+  <g font-family="Caveat, cursive" font-size="15" fill="#1d2a4a">
+    <text x="88" y="150">studio</text>
+    <text x="250" y="56">office</text>
+    <text x="250" y="190">darkroom</text>
+    <text x="96" y="290">Rue Hamra (pharmacy opposite)</text>
+    <text x="4" y="150" transform="rotate(-90 14 150)">tailor</text>
+    <text x="306" y="224">bench</text>
+    <text x="222" y="96">safe shelf</text>
+  </g>
+  <g font-family="Caveat, cursive" font-size="15" fill="#8b1a1a" font-weight="600">
+    <text x="140" y="250">1</text><text x="70" y="90">2</text><text x="336" y="100">3</text><text x="262" y="232">4</text><text x="340" y="246">5</text><text x="48" y="210">6</text>
+  </g>
+  <path d="M250 214 Q262 206 276 214" stroke="#8b1a1a" stroke-width="2" fill="none"/>
+</svg>

@@ -332,3 +332,55 @@ test('interview craft, pressure, the hypothesis board and the debrief', async ({
   await expect(profile.locator('.finding', { hasText: 'Anchoring' })).toContainText('Watch this');
   await shot(page, '15-debrief');
 });
+
+test('Studio Phénix can be solved end to end', async ({ page }) => {
+  await page.goto('/');
+  await page.evaluate(() => localStorage.clear());
+  await page.goto('/');
+  await page.getByRole('button', { name: /Studio Phénix/ }).click();
+  await page.getByRole('button', { name: 'Untie the twine' }).click();
+  await page.getByRole('button', { name: 'Go to the desk' }).click();
+  for (const id of ['interrogation-log', 'confession', 'autopsy-1974', 'evidence-inventory', 'bank-list', 'fouad-diary', 'valet-ledger', 'traffic-report', 'casino-register', 'stmt-raymond', 'stmt-mona']) { await read(page, id); await closeReader(page); }
+  await read(page, 'sealed-envelope');
+  await page.getByRole('button', { name: 'Break the wax seal' }).click();
+  await expect(page.getByText(/Je connais le conducteur/)).toBeVisible();
+  await closeReader(page);
+  await read(page, 'contact-sheet');
+  await page.getByRole('button', { name: /Magnifier/ }).click();
+  await shot(page, '16-phenix-contact');
+  await closeReader(page);
+  await read(page, 'qr-prints');
+  await page.getByRole('button', { name: 'Scan the QR code' }).click();
+  await page.getByRole('button', { name: /Open: Fingerprint comparison/ }).click();
+  await closeReader(page);
+
+  await page.getByRole('link', { name: /Timeline/ }).click();
+  const coll = page.getByRole('region', { name: 'Statements that collide with the record' });
+  for (const t of ['Claims: at home in Bourj Hammoud', 'Claims: at home with a migraine', 'Claims: at the banquet all evening']) await expect(coll).toContainText(t);
+
+  await page.getByRole('link', { name: /Interview/ }).click();
+  await page.getByRole('button', { name: /Raymond Achkar/ }).click();
+  await page.getByRole('button', { name: 'Where were you on the evening of 8 March?' }).click();
+  await expect(page.getByRole('button', { name: 'Ask', exact: true })).toBeVisible();
+  await showAndAsk(page, 'Hôtel Saint-Elme garage ledger', 'Then explain this.');
+  await showAndAsk(page, "Fouad's appointment diary", 'And who is R.A.?');
+  await showAndAsk(page, 'Bank staff awards, 1971', 'Four names. And a cufflink under the bench.');
+  await expect(page.locator('.caught-stamp')).toHaveCount(3);
+  await expect(page.getByText('CONFESSION RECORDED', { exact: true })).toHaveCount(0);
+  await showAndAsk(page, 'Fingerprint comparison, 2025', 'Your thumb is on the stand.');
+  await expect(page.getByText('CONFESSION RECORDED', { exact: true })).toBeVisible();
+  await shot(page, '17-phenix-interview');
+
+  await page.getByRole('link', { name: /Charge/ }).click();
+  await page.getByText('Raymond Achkar').first().click();
+  await page.getByRole('button', { name: 'Next' }).click();
+  await page.getByText('Struck once from behind with the brass stand').click();
+  await page.getByRole('button', { name: 'Next' }).click();
+  await page.getByText('To recover a negative').click();
+  await page.getByRole('button', { name: 'Next' }).click();
+  for (const t of ['Hôtel Saint-Elme garage ledger', 'Fingerprint comparison, 2025', 'Contact sheet, October 1973']) await page.getByLabel(t, { exact: true }).check();
+  await page.getByRole('button', { name: 'Next' }).click();
+  await page.getByRole('button', { name: 'File the charge' }).click();
+  await expect(page.getByTestId('rank')).toHaveText('Chief Inspector');
+  await expect(page.getByTestId('score-total')).toHaveText('100');
+});

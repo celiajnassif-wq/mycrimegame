@@ -1,0 +1,685 @@
+{
+  "id": "phenix",
+  "title": "Studio Phénix",
+  "subtitle": "A photographer, a confession, fifty years",
+  "place": "Beirut, Lebanon",
+  "date": "Friday 8 March 1974",
+  "reopened": "Reopened for review, May 2025",
+  "languages": ["English", "Arabic", "French", "Armenian"],
+  "intro": {
+    "label": "ABI NADER, Fouad. Hamra Police Ref. 74/233",
+    "stamps": ["CLOSED: CONFESSION", "REOPENED 2025", "CONFIDENTIAL"],
+    "briefing": [
+      "On the morning of Saturday 9 March 1974, the society photographer Fouad Abi Nader, 58, was found dead in the darkroom of his shop, Studio Phénix, on Rue Hamra in Beirut. He had been struck on the head. The safe was open.",
+      "His apprentice, Hagop Kalaydjian, 19, found the body and was arrested the same morning. After thirty-one hours at the Hamra station he signed a confession. He retracted it at trial. The court convicted him anyway.",
+      "Hagop served eleven years. He is seventy now, and his niece, a lawyer, has asked for a review. A renovation of the Hamra building and a forgotten evidence box have just given you new material. Read the file, question the people around Fouad Abi Nader, and decide: was the confession true? If not, who killed him, how, why, and which three records prove it?"
+    ]
+  },
+  "victim": {
+    "name": "Fouad Abi Nader",
+    "summary": "Society photographer, 58, owner of Studio Phénix on Rue Hamra since 1952. Married to Mona Abi Nader. Photographed weddings, banquets and portraits of Beirut's well-to-do."
+  },
+  "groups": [
+    { "id": "police-1974", "label": "Police file, 1974" },
+    { "id": "court", "label": "Interrogation and court" },
+    { "id": "statements", "label": "Statements, March 1974" },
+    { "id": "recovered", "label": "Recovered records" },
+    { "id": "review-2025", "label": "Review, 2025" }
+  ],
+  "documents": [
+    {
+      "id": "review-brief", "kind": "email", "title": "Review request", "group": "review-2025", "date": "12 May 2025", "rotate": -1,
+      "body": {
+        "from": "Me Lina Kalaydjian <l.kalaydjian@avocats-beyrouth.example>",
+        "to": "Reviewing Investigator, Archive Review Office",
+        "date": "Mon, 12 May 2025 10:04",
+        "subject": "Ref 74/233 Abi Nader: request for review",
+        "lines": [
+          "Dear Investigator,",
+          "My uncle, Hagop Kalaydjian, was convicted in February 1975 of killing his employer, Fouad Abi Nader. The only evidence against him was a confession he signed after thirty-one hours without sleep, and a quarrel about unpaid wages. He retracted the confession at trial. He served eleven years.",
+          "Three things have changed. The building at Rue Hamra has been renovated, and the workmen found an envelope hidden behind a panel in the old darkroom. The 1974 evidence box has been located at the Palace of Justice archive, with items that were never examined. And my family has given me a letter we kept hidden for fifty years.",
+          "I am not asking you to believe my uncle. I am asking you to read the file the police stopped reading on 10 March 1974.",
+          "Some archive records have been digitised: scan the QR stickers to open them.",
+          "Lina Kalaydjian, avocate"
+        ],
+        "attachments": ["74-233-index.pdf"]
+      }
+    },
+    {
+      "id": "arrest-report", "kind": "typed", "title": "Arrest report", "group": "police-1974", "date": "9 March 1974", "rotate": 1.5,
+      "body": {
+        "letterhead": "INTERNAL SECURITY FORCES . HAMRA STATION",
+        "ref": "Ref. 74/233",
+        "lines": [
+          "At 08.40 on 9 March 1974 the station received a telephone call from the apprentice of Studio Phénix, Rue Hamra, reporting that his employer was dead.",
+          "Officers found KALAYDJIAN, Hagop, 19, Armenian, of Bourj Hammoud, at the scene. He holds a key to the shop. The tailor next door states that the apprentice and the deceased quarrelled violently about wages on the evening of 8 March.",
+          "The apprentice was unable to account for his evening satisfactorily. He was arrested on suspicion of murder and taken to the station for questioning.",
+          "Translated from Arabic."
+        ],
+        "signature": "Insp. Antoine Khalil"
+      }
+    },
+    {
+      "id": "scene-report", "kind": "typed", "title": "Scene report", "group": "police-1974", "date": "9 March 1974", "rotate": -2,
+      "body": {
+        "letterhead": "INTERNAL SECURITY FORCES . SCENE REPORT",
+        "ref": "Ref. 74/233",
+        "lines": [
+          "Studio Phénix: shop and portrait studio at the front, office and darkroom at the back. Street door unlocked, no sign of forcing.",
+          "The deceased lay face down on the darkroom floor between the enlarger and the sink, a wound to the back of the head. A brass studio light stand with a heavy base lay beside him, bloodstained at the base. The enlarger lamp was still switched on.",
+          "In the office the safe stood open. The lock is a combination dial and is undamaged. The cash box inside was empty. On the shelf above the safe, a clean rectangle in the dust where a box has recently stood; the label holder below it reads 'Archives 73'.",
+          "Under the darkroom bench, a single gilt cufflink (see inventory, item 7).",
+          "Photographs taken. Exhibits listed separately."
+        ],
+        "signature": "Sgt. Georges Maalouf"
+      }
+    },
+    {
+      "id": "scene-photo", "kind": "photo", "title": "Darkroom photograph", "group": "police-1974", "date": "9 March 1974", "rotate": 2.5,
+      "body": {
+        "svg": "scene-photo.svg",
+        "caption": "Police photograph, darkroom of Studio Phénix, 9.III.74, 09.30.",
+        "back": "Neg. 74/233/2. Sgt. Maalouf.",
+        "tags": [
+          { "n": 1, "x": 46, "y": 80, "label": "Position of the body, face down, head towards the sink" },
+          { "n": 2, "x": 30, "y": 76, "label": "Brass light stand, base bloodstained" },
+          { "n": 3, "x": 68, "y": 40, "label": "Enlarger, lamp still on" },
+          { "n": 4, "x": 84, "y": 80, "label": "Under the bench: where the cufflink was found" },
+          { "n": 5, "x": 14, "y": 28, "label": "Doorway to the office, the open safe beyond" }
+        ]
+      }
+    },
+    {
+      "id": "floor-plan", "kind": "floorplan", "title": "Shop floor plan", "group": "police-1974", "rotate": -1,
+      "body": {
+        "svg": "floorplan.svg",
+        "caption": "Sketch by Sgt. Maalouf, not to scale. Studio Phénix, Rue Hamra, ground floor.",
+        "legend": [
+          { "n": 1, "label": "Street door onto Rue Hamra, opposite the night pharmacy" },
+          { "n": 2, "label": "Portrait studio" },
+          { "n": 3, "label": "Office: safe with combination dial, shelf 'Archives 73'" },
+          { "n": 4, "label": "Darkroom: deceased found here" },
+          { "n": 5, "label": "Bench where the cufflink was found" },
+          { "n": 6, "label": "Wall shared with the tailor's shop" }
+        ]
+      }
+    },
+    {
+      "id": "autopsy-1974", "kind": "lab", "title": "Autopsy summary", "group": "police-1974", "date": "10 March 1974", "rotate": 1,
+      "body": {
+        "lab": "Forensic Medicine Service, Beirut",
+        "ref": "Case 74/233",
+        "rows": [
+          { "test": "Wound", "result": "Single depressed fracture, back of the skull (occipital)", "ref": "", "flag": "" },
+          { "test": "Direction of blow", "result": "From behind and above; victim standing, facing away", "ref": "", "flag": "!" },
+          { "test": "Weapon", "result": "Consistent with the base of the brass stand", "ref": "", "flag": "" },
+          { "test": "Time of death (estimate)", "result": "Between 21.00 and 23.00", "ref": "", "flag": "" },
+          { "test": "Stomach", "result": "Meal taken about three hours before death", "ref": "", "flag": "" }
+        ],
+        "conclusion": [
+          "Death from a single blow struck from behind. No defensive injuries: the victim did not see it coming."
+        ],
+        "signed": "Dr. Samia Haddad, forensic physician"
+      }
+    },
+    {
+      "id": "evidence-inventory", "kind": "form", "title": "Exhibits inventory", "group": "police-1974", "date": "9 to 11 March 1974", "rotate": -1.5,
+      "body": {
+        "heading": "HAMRA STATION . EXHIBITS, REF 74/233",
+        "subheading": "Box located at the Palace of Justice archive, 2025. Items marked * never examined.",
+        "columns": ["Item", "Description", "Note"],
+        "rows": [
+          ["1", "Brass studio light stand, heavy base, bloodstained", "Weapon"],
+          ["3", "Cash box from safe, empty", ""],
+          ["5", "Appointment diary of the deceased, 1973 to 1974", "Returned to the widow, 1975"],
+          ["7", "Gilt cufflink, blue enamel: a cedar inside a key", "* Found under darkroom bench"],
+          ["9", "Latent print card: partial right thumb, shaft of stand", "Not matching KALAYDJIAN H. (compared 9.III). Further comparison suspended 11.III, suspect has confessed"]
+        ],
+        "highlight": [3, 4],
+        "footer": "Signed for the exhibits store: Sgt. G. Maalouf."
+      }
+    },
+    {
+      "id": "interrogation-log", "kind": "typed", "title": "Interrogation log", "group": "court", "date": "9 to 10 March 1974", "rotate": 2,
+      "body": {
+        "letterhead": "HAMRA STATION . RECORD OF QUESTIONING: KALAYDJIAN, Hagop",
+        "ref": "Ref. 74/233. Kept by Cpl. Nassar. Translated from Arabic.",
+        "lines": [
+          "09.40 Q: Where were you last night? A: At home, in Bourj Hammoud. Q: Who saw you? A: Nobody. My mother was asleep.",
+          "11.15 Suspect states he left the studio at a quarter to seven after a disagreement about wages.",
+          "14.00 Q: You hit him with the brass stand, didn't you? A: What stand? I did not hit anyone.",
+          "19.20 Q: The safe was open and the money was gone. You took the money from the safe? A: I do not know the combination. Only Mr Fouad knows it.",
+          "23.50 Q: He was angry, he faced you, you struck him. That is what happened. A: (no answer)",
+          "03.00 Suspect asks to sleep. Refused. Suspect asks for his mother. Refused.",
+          "08.10 Suspect told the tailor heard everything and that a confession will be treated with mercy.",
+          "15.10 Suspect agrees to sign a statement. Statement drafted from the suspect's answers and signed.",
+          "Note: the suspect was not shown the autopsy report or the scene report at any time."
+        ],
+        "signature": "Insp. A. Khalil"
+      }
+    },
+    {
+      "id": "confession", "kind": "carbon", "title": "Signed confession", "group": "court", "date": "10 March 1974", "rotate": -2,
+      "body": {
+        "heading": "STATEMENT OF THE ACCUSED (carbon copy). Translated from Arabic.",
+        "lines": [
+          "I, Hagop Kalaydjian, make this statement freely.",
+          "On Friday evening I went back to the studio to ask for my wages. Mr Fouad refused. We argued. He was facing me and shouting.",
+          "I took the brass stand and hit him. He fell backwards.",
+          "I took the key from his pocket and opened the safe and took the money. I threw the money in the sea at Raouché.",
+          "I am sorry for what I did."
+        ],
+        "signature": "H. Kalaydjian (signed 15.10, 10.III.74)"
+      }
+    },
+    {
+      "id": "verdict-1975", "kind": "typed", "title": "Judgment, 1975", "group": "court", "date": "21 February 1975", "rotate": 1,
+      "body": {
+        "letterhead": "CRIMINAL COURT OF BEIRUT",
+        "ref": "Case 74/233, judgment of 21 February 1975. Translated from French.",
+        "lines": [
+          "The accused retracted his confession, claiming it was obtained by exhaustion and threats. The court finds the confession detailed and consistent with the scene: the weapon, the open safe, the missing money.",
+          "The motive, three months of unpaid wages, is established by the tailor Elias Nasr and by a note in the accused's hand.",
+          "The accused offered no alibi for the evening of 8 March.",
+          "KALAYDJIAN, Hagop is found guilty of the murder of Fouad Abi Nader and sentenced to fifteen years."
+        ],
+        "signature": "Président Fouad Tabet",
+        "stamp": "GUILTY"
+      }
+    },
+    {
+      "id": "wage-note", "kind": "handwritten", "title": "Note in the apprentice's hand", "group": "court", "date": "March 1974", "rotate": 2,
+      "body": {
+        "lang": "fr",
+        "dir": "ltr",
+        "writer": "Note found in the till of Studio Phénix, Exhibit 12 at trial",
+        "original": [
+          "Monsieur Fouad,",
+          "Trois mois sans salaire. Ma mère est malade.",
+          "Si vous ne payez pas vendredi, je vais au bureau du travail.",
+          "H.K."
+        ],
+        "translation": [
+          "Mr Fouad,",
+          "Three months without wages. My mother is ill.",
+          "If you do not pay on Friday, I am going to the labour office.",
+          "H.K."
+        ],
+        "note": "Read at trial as a threat."
+      }
+    },
+    {
+      "id": "stmt-mona", "kind": "carbon", "title": "Statement: Mona Abi Nader", "group": "statements", "date": "9 March 1974", "rotate": -1.5,
+      "body": {
+        "heading": "STATEMENT OF WITNESS (carbon copy). Taken in French.",
+        "lines": [
+          "Name: Mona Abi Nader, 50, wife of the deceased. Address: Rue Sursock, Achrafieh.",
+          "My husband told me he would work late on Friday. I stayed at home all evening with a migraine and went to bed early. I did not worry when he did not come home; it happened when he had a lot of printing.",
+          "I know nothing about my husband's business. He had no enemies. The boy was always angry about money."
+        ],
+        "signature": "M. Abi Nader"
+      }
+    },
+    {
+      "id": "stmt-raymond", "kind": "carbon", "title": "Statement: Raymond Achkar", "group": "statements", "date": "11 March 1974", "rotate": 2,
+      "body": {
+        "heading": "STATEMENT OF WITNESS (carbon copy). Taken in French.",
+        "lines": [
+          "Name: Raymond Achkar, 45, deputy director, Banque Continentale du Levant. Address: Rue de Verdun.",
+          "Mr Abi Nader photographed my daughter's wedding in 1971. I hardly knew him beyond that.",
+          "On the evening of 8 March I attended the Bankers' Association banquet at the Hôtel Saint-Elme, from eight o'clock until after half past eleven. I gave the toast.",
+          "Asked about the initials R.A. in the deceased's diary: they are not mine. I had no appointment with him.",
+          "Note by Insp. Khalil: witness not pursued, the apprentice confessed on 10 March."
+        ],
+        "signature": "R. Achkar"
+      }
+    },
+    {
+      "id": "stmt-tailor", "kind": "typed", "title": "Statement: the tailor", "group": "statements", "date": "9 March 1974", "rotate": 1,
+      "body": {
+        "letterhead": "INTERNAL SECURITY FORCES . NOTE OF INTERVIEW",
+        "lines": [
+          "Name: Elias Nasr, 61, tailor, shop adjoining Studio Phénix.",
+          "At about six on Friday I heard the boy and Mr Fouad shouting through the wall. The boy said 'three months' many times. Mr Fouad said 'get out, I have someone important coming at nine'.",
+          "At a quarter to seven the boy left and slammed the door. I closed my shop at seven and went home. I heard nothing after that.",
+          "Translated from Arabic."
+        ],
+        "signature": "E. Nasr"
+      }
+    },
+    {
+      "id": "stmt-pharmacist", "kind": "typed", "title": "Statement: the night pharmacist", "group": "statements", "date": "9 March 1974", "rotate": -1,
+      "body": {
+        "letterhead": "INTERNAL SECURITY FORCES . NOTE OF INTERVIEW",
+        "lines": [
+          "Name: Nabil Srour, 38, pharmacist, Pharmacie de Nuit, Rue Hamra, opposite Studio Phénix.",
+          "At about twenty-five past nine I heard a crash from across the street, then a cry, short. I looked out. The studio lights were on at the back.",
+          "At about twenty-five to ten a man in a dark overcoat came out of the studio quickly, carrying a box under his arm, and got into a large dark green car, a Mercedes. He drove towards Raouché. I could not read the plate.",
+          "He was not young and he was not the apprentice. The apprentice is thin; this man was heavy.",
+          "Note in margin, different ink: 'Not relevant, suspect confessed. A.K.'"
+        ],
+        "signature": "N. Srour"
+      }
+    },
+    {
+      "id": "fouad-diary", "kind": "handwritten", "title": "Fouad's appointment diary", "group": "recovered", "date": "1973 to 1974", "rotate": -2.5,
+      "body": {
+        "lang": "fr",
+        "dir": "ltr",
+        "writer": "Pocket diary of Fouad Abi Nader (Exhibit 5, returned to the widow in 1975, kept by the family)",
+        "original": [
+          "8 nov. 1973 : R.A. 500 L.L.",
+          "8 déc. : R.A. 500",
+          "8 janv. 1974 : R.A. 500",
+          "8 févr. : R.A. 500",
+          "Vendredi 8 mars : 18 h Hagop (salaire, encore). Le faire partir avant 21 h.",
+          "21 h 15 : R.A. veut tout racheter. Apporter la boîte 73."
+        ],
+        "translation": [
+          "8 Nov 1973: R.A. 500 Lebanese pounds.",
+          "8 Dec: R.A. 500",
+          "8 Jan 1974: R.A. 500",
+          "8 Feb: R.A. 500",
+          "Friday 8 March: 6 pm Hagop (wages, again). Make him leave before 9.",
+          "9.15 pm: R.A. wants to buy everything back. Bring box 73."
+        ],
+        "note": "Lent to the review by the Abi Nader family."
+      }
+    },
+    {
+      "id": "passbook", "kind": "ledger", "title": "Fouad's savings passbook", "group": "recovered", "date": "1973 to 1974", "rotate": 1.5,
+      "body": {
+        "heading": "Banque de Syrie et du Liban . Livret d'épargne No. 40812 . F. Abi Nader",
+        "columns": ["Date", "Deposit (L.L.)", "Withdrawal", "Balance"],
+        "rows": [
+          ["2.X.73", "", "300", "1,140"],
+          ["9.XI.73", "500", "", "1,640"],
+          ["10.XII.73", "500", "", "2,140"],
+          ["9.I.74", "500", "", "2,640"],
+          ["9.II.74", "500", "", "3,140"]
+        ],
+        "highlight": [1, 2, 3, 4],
+        "totals": "No deposits of this size before November 1973."
+      }
+    },
+    {
+      "id": "valet-ledger", "kind": "ledger", "title": "Hôtel Saint-Elme garage ledger", "group": "recovered", "date": "8 March 1974", "rotate": -1,
+      "body": {
+        "heading": "Hôtel Saint-Elme, Aïn el-Mreissé . Garage des clients . Vendredi 8 mars 1974",
+        "columns": ["Plate", "Car", "Client", "In", "Out", "In", "Out"],
+        "rows": [
+          ["88102", "Peugeot 404 noire", "M. Sarkis", "19.40", "23.55", "", ""],
+          ["124317", "Mercedes 280 verte", "M. Achkar", "19.50", "21.00", "21.45", "23.40"],
+          ["61550", "Chevrolet blanche", "Dr Haddad", "20.05", "23.30", "", ""],
+          ["13209", "Mercedes 220 noire", "M. Ghosn", "20.10", "00.15", "", ""]
+        ],
+        "highlight": [1],
+        "totals": "Valet on duty: Khaled. Ledger found in the hotel's archive boxes when it closed in 1975."
+      }
+    },
+    {
+      "id": "newspaper-banquet", "kind": "newspaper", "title": "Clipping: Le Soir du Levant", "group": "recovered", "date": "9 March 1974", "rotate": 2,
+      "body": {
+        "masthead": "Le Soir du Levant",
+        "dateline": "Samedi 9 mars 1974 . Translated from French",
+        "headline": "The bankers dine at the Saint-Elme",
+        "subhead": "A glittering evening for the Bankers' Association",
+        "columns": [
+          "Some two hundred guests gathered on Friday evening at the Hôtel Saint-Elme for the annual banquet of the Bankers' Association, under the chandeliers of the great hall overlooking the sea.",
+          "The toast of the evening was given shortly after ten by M. Raymond Achkar, deputy director of the Banque Continentale du Levant, after a brief absence that kept the dessert waiting. He spoke with feeling about 'the trust on which our whole profession rests'.",
+          "The evening ended well after midnight."
+        ],
+        "also": "Also: Photographer found dead in Hamra (page 4)."
+      }
+    },
+    {
+      "id": "traffic-report", "kind": "form", "title": "Traffic incident report, Raouché", "group": "recovered", "date": "8 March 1974", "rotate": 1,
+      "body": {
+        "heading": "INTERNAL SECURITY FORCES . RAOUCHÉ POST . TRAFFIC INCIDENT",
+        "subheading": "Friday 8 March 1974. Filed at Raouché post, never cross-referenced with Hamra station.",
+        "columns": ["Time", "Entry", "Officer"],
+        "rows": [
+          ["21.40", "Collision, Fiat taxi and Vespa, Corniche opposite the Pigeon Rocks. Rider bruised, no hospital.", "Cpl. Daher"],
+          ["21.50", "Witness: KALAYDJIAN Hagop, 19, Bourj Hammoud. Saw the taxi pull out without looking.", "Cpl. Daher"],
+          ["22.05", "Witness: GHANDOUR Salma, 18, Mazraa. Confirms. Both witnesses had come from the Étoile cinema.", "Cpl. Daher"],
+          ["22.20", "Witnesses released. Taxi driver cautioned.", "Cpl. Daher"]
+        ],
+        "highlight": [1, 2],
+        "footer": "Raouché post register, volume 1974/1. Located by the review, 2025."
+      }
+    },
+    {
+      "id": "salma-letter", "kind": "handwritten", "title": "Letter from Salma", "group": "recovered", "date": "February 1975", "rotate": -2,
+      "body": {
+        "lang": "ar",
+        "dir": "rtl",
+        "writer": "Letter from Salma Ghandour to Hagop's mother, kept hidden by the Kalaydjian family",
+        "original": [
+          "خالتي العزيزة،",
+          "بكتبلك وأنا خايفة. هاكوب كان معي ليلة الجمعة ٨ آذار من الساعة سبعة لحد الحدعش ونص.",
+          "رحنا على سينما النجمة بالروشة، وبعدها مشينا عالكورنيش.",
+          "قدام صخرة الروشة صار حادث بين تاكسي وفيسبا، والدركي أخد أسامينا.",
+          "هاكوب ما قتل حدا. بس حلّفني ما قول لحدا، لأن بيّي بيقتلني إذا عرف إني كنت معه.",
+          "سامحيني. سلمى"
+        ],
+        "translation": [
+          "Dear auntie,",
+          "I am writing to you and I am afraid. Hagop was with me on Friday night, 8 March, from seven until half past eleven.",
+          "We went to the Étoile cinema in Raouché, and afterwards we walked along the Corniche.",
+          "In front of the Pigeon Rocks there was an accident between a taxi and a Vespa, and the gendarme took our names.",
+          "Hagop did not kill anyone. But he made me swear not to tell anyone, because my father would kill me if he knew I was with him.",
+          "Forgive me. Salma"
+        ],
+        "note": "Given to the review by Me Lina Kalaydjian. Salma Ghandour died in 2019."
+      }
+    },
+    {
+      "id": "casino-register", "kind": "form", "title": "Casino des Pins: private rooms register", "group": "recovered", "date": "8 March 1974", "rotate": 1.5,
+      "body": {
+        "heading": "CASINO DES PINS, MAAMELTEIN . SALONS PRIVÉS",
+        "subheading": "Vendredi 8 mars 1974. Entries, exits and credit.",
+        "columns": ["Guest", "In", "Out", "Credit signed"],
+        "rows": [
+          ["M. et Mme Bustros", "20.30", "00.10", ""],
+          ["Mme M. Abi Nader", "21.10", "01.20", "2,000 L.L."],
+          ["Cheikh K. Daouk", "21.45", "03.00", "5,000 L.L."]
+        ],
+        "highlight": [1],
+        "footer": "Maameltein is about forty minutes' drive from Hamra. Register from the casino's archive."
+      }
+    },
+    {
+      "id": "insurance", "kind": "typed", "title": "Life insurance policy", "group": "recovered", "date": "June 1973", "rotate": -1,
+      "body": {
+        "letterhead": "LA PRÉVOYANCE DU LEVANT . Assurances vie",
+        "lines": [
+          "Policy No. 7731-B. Insured: Fouad Abi Nader. Sum assured: 20,000 Lebanese pounds. Beneficiary: Mona Abi Nader, his wife. Taken out 4 June 1973.",
+          "Stamped on the last page: 'Premiums unpaid since January 1974. Policy lapsed 28 February 1974. No benefit payable.'",
+          "Translated from French."
+        ],
+        "signature": "For the company: J. Frem"
+      }
+    },
+    {
+      "id": "hit-run-file", "kind": "typed", "title": "Traffic file: hit-and-run, 1973", "group": "recovered", "date": "15 October 1973", "rotate": 2,
+      "body": {
+        "letterhead": "INTERNAL SECURITY FORCES . TRAFFIC POLICE, BEIRUT",
+        "ref": "Ref. TR-73/1188",
+        "lines": [
+          "On 14 October 1973 at about 23.10, Rue Aïn el-Mreissé: Ziad K., aged 9, riding a bicycle, struck by a car which did not stop. The child died at the scene.",
+          "A witness on a balcony saw a large dark green Mercedes. Partial plate: the last three figures 317.",
+          "Fragments of green paint and of a headlamp glass collected.",
+          "Enquiries at body shops without result. File unsolved."
+        ],
+        "signature": "Lt. Joseph Saad"
+      }
+    },
+    {
+      "id": "garage-invoice", "kind": "form", "title": "Body shop invoice", "group": "recovered", "date": "16 October 1973", "rotate": -1.5,
+      "body": {
+        "heading": "GARAGE AL-AMAL . Carrosserie . Mar Elias",
+        "subheading": "Invoice No. 3307, 16 October 1973.",
+        "columns": ["Car", "Plate", "Client", "Work", "L.L."],
+        "rows": [
+          ["Mercedes 280 SE, green", "124317", "M. R. Achkar", "Front right wing, headlamp, grille, paint", "640"]
+        ],
+        "highlight": [0],
+        "footer": "Paid cash. Pencilled by the owner: 'Client asks: no record, no questions.' Invoice book given to the review by the owner's son, 2025."
+      }
+    },
+    {
+      "id": "bank-list", "kind": "form", "title": "Bank staff awards, 1971", "group": "recovered", "date": "December 1971", "rotate": 1,
+      "body": {
+        "heading": "BANQUE CONTINENTALE DU LEVANT . Ten years of service, 1961 to 1971",
+        "subheading": "Each recipient receives a pair of gilt cufflinks bearing the bank's emblem, a blue cedar within a key.",
+        "columns": ["Name", "Position", "Signed for"],
+        "rows": [
+          ["G. Sarkis", "Head cashier", "G.S."],
+          ["R. Achkar", "Deputy director", "R.A."],
+          ["N. Tabet", "Head of foreign exchange", "N.T."],
+          ["L. Assaf", "Chief accountant", "L.A."]
+        ],
+        "highlight": [1],
+        "footer": "From the bank's staff bulletin archive."
+      }
+    },
+    {
+      "id": "qr-prints", "kind": "qr", "title": "Archive sticker: fingerprint comparison", "group": "review-2025", "rotate": -2,
+      "body": {
+        "payload": "DOSSIERS:phenix:print-comparison",
+        "unlocks": "print-comparison",
+        "label": "Forensic Science Bureau, 2025. Digitised comparison of exhibit 9 (latent print card, 1974).",
+        "caption": "Scan to open the digitised record."
+      }
+    },
+    {
+      "id": "print-comparison", "kind": "lab", "title": "Fingerprint comparison, 2025", "group": "review-2025", "hidden": true, "rotate": 1,
+      "unlockedBy": { "qr": "qr-prints" },
+      "body": {
+        "lab": "Forensic Science Bureau, Beirut",
+        "ref": "Exhibit 9, case 74/233 (latent print, shaft of brass stand)",
+        "rows": [
+          { "test": "Compared with: H. Kalaydjian (1974 card)", "result": "Excluded", "ref": "", "flag": "" },
+          { "test": "Compared with: M. Abi Nader (1975 card, estate)", "result": "Excluded", "ref": "", "flag": "" },
+          { "test": "Compared with: R. Achkar (1979 firearms licence card)", "result": "Identified, 14 matching points", "ref": "12 points required", "flag": "MATCH" }
+        ],
+        "conclusion": [
+          "The partial right thumb print lifted from the shaft of the weapon in 1974 was made by Raymond Achkar.",
+          "The comparison could have been made in 1974. It was suspended on 11 March 1974."
+        ],
+        "signed": "Expert Rania Khoury"
+      }
+    },
+    {
+      "id": "sealed-envelope", "kind": "sealed", "title": "Envelope from behind the darkroom panel", "group": "review-2025", "date": "February 1974", "rotate": 2,
+      "body": {
+        "seal": "FAN",
+        "envelope": {
+          "to": "À qui la trouvera",
+          "from": "Studio Phénix, Rue Hamra",
+          "postmark": "NOT POSTED",
+          "stamp": "FOUND BEHIND DARKROOM PANEL, 2025"
+        },
+        "lang": "fr",
+        "letter": [
+          "À qui trouvera cette enveloppe,",
+          "Le 14 octobre 1973, vers 23 heures, rue Aïn el-Mreissé, j'ai photographié une Mercedes verte arrêtée au-dessus d'un enfant et de sa bicyclette. Puis la voiture est repartie.",
+          "Je connais le conducteur. J'ai photographié le mariage de sa fille. Je ne suis pas allé à la police. Je suis allé chez lui.",
+          "Depuis, il me paie le 8 de chaque mois. J'ai honte de cet argent, et j'ai peur de lui.",
+          "Le négatif est dans la boîte 73. Je laisse ici une planche contact, au cas où.",
+          "F."
+        ],
+        "translation": [
+          "To whoever finds this envelope,",
+          "On 14 October 1973, at about 11 pm, in Rue Aïn el-Mreissé, I photographed a green Mercedes stopped over a child and his bicycle. Then the car drove away.",
+          "I know the driver. I photographed his daughter's wedding. I did not go to the police. I went to his house.",
+          "Since then he has paid me on the 8th of every month. I am ashamed of this money, and I am afraid of him.",
+          "The negative is in box 73. I am leaving a contact sheet here, just in case.",
+          "F."
+        ],
+        "note": "Found by workmen during the 2025 renovation of the Rue Hamra building, sealed with the studio's wax seal."
+      }
+    },
+    {
+      "id": "contact-sheet", "kind": "photo", "title": "Contact sheet, October 1973", "group": "review-2025", "hidden": true, "rotate": -1,
+      "unlockedBy": { "seal": "sealed-envelope" },
+      "body": {
+        "svg": "contact-sheet.svg",
+        "caption": "Contact sheet from the envelope. Roll marked '14.X.73'. Frames 5 to 8 taken at night.",
+        "back": "In pencil: '14.X.73, 23 h, Aïn el-Mreissé. Ne jamais tirer.' (Never print.)",
+        "tags": [
+          { "n": 1, "x": 18, "y": 22, "label": "Frames 1 to 4: a wedding, daytime" },
+          { "n": 2, "x": 62, "y": 54, "label": "Frame 7: a car stopped under a street lamp, a bicycle beneath it. Use the magnifier on the plate" },
+          { "n": 3, "x": 87, "y": 54, "label": "Frame 8: the car driving away" }
+        ]
+      }
+    },
+    {
+      "id": "sheet-hagop", "kind": "suspect", "title": "Person sheet: Hagop Kalaydjian", "group": "review-2025", "rotate": -2,
+      "body": { "suspectId": "hagop" }
+    },
+    {
+      "id": "sheet-mona", "kind": "suspect", "title": "Person sheet: Mona Abi Nader", "group": "review-2025", "rotate": 1.5,
+      "body": { "suspectId": "mona" }
+    },
+    {
+      "id": "sheet-raymond", "kind": "suspect", "title": "Person sheet: Raymond Achkar", "group": "review-2025", "rotate": 2.5,
+      "body": { "suspectId": "raymond" }
+    }
+  ],
+  "timeline": {
+    "date": "Friday 8 March 1974",
+    "start": "17:00",
+    "end": "24:00",
+    "lanes": [
+      { "id": "fouad", "label": "F. Abi Nader" },
+      { "id": "hagop", "label": "Hagop Kalaydjian", "suspectId": "hagop" },
+      { "id": "mona", "label": "Mona Abi Nader", "suspectId": "mona" },
+      { "id": "raymond", "label": "Raymond Achkar", "suspectId": "raymond" }
+    ],
+    "facts": [
+      { "id": "f-appointment", "lane": "fouad", "kind": "moment", "start": "21:15", "label": "Appointment: 'R.A.'", "place": "Studio", "source": "fouad-diary" },
+      { "id": "f-cry", "lane": "fouad", "kind": "moment", "start": "21:25", "label": "A crash and a short cry from the studio", "place": "Studio", "source": "stmt-pharmacist" },
+      { "id": "f-death", "lane": "fouad", "kind": "window", "start": "21:00", "end": "23:00", "label": "Estimated time of death", "source": "autopsy-1974" },
+      { "id": "h-quarrel", "lane": "hagop", "kind": "record", "start": "18:00", "end": "18:45", "label": "Quarrel over wages, then leaves", "place": "Studio", "source": "stmt-tailor" },
+      { "id": "h-claim-home", "lane": "hagop", "kind": "statement", "start": "18:45", "end": "24:00", "label": "Claims: at home in Bourj Hammoud", "place": "Home, Bourj Hammoud", "source": "interrogation-log" },
+      { "id": "h-cinema", "lane": "hagop", "kind": "record", "start": "19:00", "end": "21:30", "label": "With Salma, Étoile cinema", "place": "Raouché", "source": "salma-letter" },
+      { "id": "h-accident", "lane": "hagop", "kind": "record", "start": "21:40", "end": "22:20", "label": "Witness to a collision, statement to police", "place": "Raouché", "source": "traffic-report" },
+      { "id": "m-claim-home", "lane": "mona", "kind": "statement", "start": "18:00", "end": "24:00", "label": "Claims: at home with a migraine", "place": "Home, Achrafieh", "source": "stmt-mona" },
+      { "id": "m-casino", "lane": "mona", "kind": "record", "start": "21:10", "end": "24:00", "label": "In the casino's private rooms (until 01.20)", "place": "Casino des Pins", "source": "casino-register" },
+      { "id": "r-claim-banquet", "lane": "raymond", "kind": "statement", "start": "20:00", "end": "23:30", "label": "Claims: at the banquet all evening", "place": "Hôtel Saint-Elme", "source": "stmt-raymond" },
+      { "id": "r-car-out", "lane": "raymond", "kind": "absence", "start": "21:00", "end": "21:45", "label": "His car out of the hotel garage", "place": "Away from the hotel", "source": "valet-ledger" },
+      { "id": "r-green-car", "lane": "raymond", "kind": "moment", "start": "21:35", "label": "Heavy man leaves the studio in a green Mercedes", "place": "Studio", "source": "stmt-pharmacist" },
+      { "id": "r-toast", "lane": "raymond", "kind": "moment", "start": "22:05", "label": "Gives the toast, 'after a brief absence'", "place": "Hôtel Saint-Elme", "source": "newspaper-banquet" }
+    ]
+  },
+  "suspects": [
+    {
+      "id": "hagop",
+      "name": "Hagop Kalaydjian",
+      "role": "Apprentice, convicted 1975",
+      "age": 19,
+      "address": "Bourj Hammoud",
+      "sheet": [
+        "Apprentice at Studio Phénix since 1971. Armenian, son of a widowed seamstress.",
+        "Found the body on 9 March 1974. Confessed on 10 March after thirty-one hours of questioning. Retracted at trial.",
+        "Convicted February 1975, released 1986. Now seventy."
+      ],
+      "portrait": { "seed": 19, "skin": "#c69c74", "hair": "#16100b", "hairStyle": "wavy", "age": "young", "coat": "#4a4136" },
+      "openingLine": "(in the visitors' room, hands flat on the table) They told me if I signed, I could sleep. So I signed. Ask me what you want, monsieur. I will tell you the truth. Almost all of it.",
+      "questions": [
+        { "id": "hag-q1", "text": "Tell me about the evening of 8 March, from the moment you left the studio." },
+        { "id": "hag-q2", "text": "What happened between you and Fouad that afternoon?" },
+        { "id": "hag-q3", "text": "Who knew the combination of the safe?" },
+        { "id": "hag-q4", "text": "Who first mentioned the brass stand during your questioning?", "unlockedBy": "interrogation-log" },
+        { "id": "hag-q5", "text": "Was Fouad expecting anyone that evening?" },
+        { "id": "hag-q6", "text": "Why were you a witness to an accident at Raouché at 21.40?", "unlockedBy": "traffic-report" },
+        { "id": "hag-q7", "text": "What was in the box marked 'Archives 73'?" }
+      ]
+    },
+    {
+      "id": "mona",
+      "name": "Mona Abi Nader",
+      "role": "Widow of the victim",
+      "age": 50,
+      "address": "Rue Sursock, Achrafieh",
+      "sheet": [
+        "Married to Fouad Abi Nader for twenty-six years. No children.",
+        "Beneficiary of a life insurance policy taken out in June 1973.",
+        "Known in Achrafieh society. Smokes, plays cards."
+      ],
+      "portrait": { "seed": 50, "skin": "#d9b38e", "hair": "#2b1d14", "hairStyle": "bun", "glasses": true, "age": "middle", "coat": "#3d2a35" },
+      "openingLine": "(lights a cigarette with a gold lighter) Fifty years, and still the police come to my salon. Bon. Sit down. I have nothing to hide, chéri, only things I prefer not to discuss.",
+      "questions": [
+        { "id": "mon-q1", "text": "Where were you on the evening of 8 March?" },
+        { "id": "mon-q2", "text": "Did Fouad have money troubles, or new money?" },
+        { "id": "mon-q3", "text": "Was your husband afraid of anyone last autumn?" },
+        { "id": "mon-q4", "text": "The casino register has you in the private rooms from 21.10. Why say you were home?", "unlockedBy": "casino-register" },
+        { "id": "mon-q5", "text": "Where did the 500 pounds every month come from?", "unlockedBy": "passbook" },
+        { "id": "mon-q6", "text": "Tell me about the life insurance policy.", "unlockedBy": "insurance" }
+      ]
+    },
+    {
+      "id": "raymond",
+      "name": "Raymond Achkar",
+      "role": "Banker",
+      "age": 45,
+      "address": "Rue de Verdun",
+      "sheet": [
+        "Deputy director of the Banque Continentale du Levant. Educated in Beirut and London.",
+        "Fouad Abi Nader photographed his daughter's wedding in 1971.",
+        "Questioned once, on 11 March 1974, about the initials 'R.A.' in the victim's diary. Not pursued."
+      ],
+      "portrait": { "seed": 45, "skin": "#cfa47c", "hair": "#3a3029", "hairStyle": "short", "glasses": true, "mustache": true, "age": "middle", "coat": "#1f2a3a" },
+      "openingLine": "(sets his hat on the table and smiles) An unhappy business, Inspector. I will help in any way I can, though I fear I knew the poor man very little. Let us be precise, and let us be quick.",
+      "questions": [
+        { "id": "ray-q1", "text": "Where were you on the evening of 8 March?" },
+        { "id": "ray-q2", "text": "How well did you know Fouad Abi Nader?" },
+        { "id": "ray-q3", "text": "Have you ever been inside Studio Phénix?" },
+        { "id": "ray-q4", "text": "Your car left the hotel garage at 21.00 and came back at 21.45. Where did it go?", "unlockedBy": "valet-ledger" },
+        { "id": "ray-q5", "text": "The diary says 'R.A.' on the 8th of every month, 500 pounds. Who is R.A.?", "unlockedBy": "fouad-diary" },
+        { "id": "ray-q6", "text": "Do you still have both of your bank service cufflinks?", "unlockedBy": "bank-list" },
+        { "id": "ray-q7", "text": "Where was your green Mercedes repaired in October 1973?", "unlockedBy": "garage-invoice" }
+      ]
+    }
+  ],
+  "hints": [
+    {
+      "id": "h-confession", "question": "Is the confession true?",
+      "hints": [
+        { "id": "h-con-1", "tier": 1, "text": "Compare what the confession says with what the autopsy and the scene report say." },
+        { "id": "h-con-2", "tier": 2, "text": "Read the interrogation log. Who mentions the stand and the safe first, the police or Hagop?" },
+        { "id": "h-con-3", "tier": 3, "text": "The confession has the blow from the front and the safe opened with a key. The autopsy says from behind; the safe had a combination only Fouad knew. Every correct detail came from the questions." }
+      ]
+    },
+    {
+      "id": "h-hagop", "question": "Where was Hagop that night?",
+      "hints": [
+        { "id": "h-hag-1", "tier": 1, "text": "A different police post took his name that evening." },
+        { "id": "h-hag-2", "tier": 2, "text": "Read the Raouché traffic report and the letter the family kept." },
+        { "id": "h-hag-3", "tier": 3, "text": "Hagop was at the Étoile cinema with Salma, then a witness to a collision at Raouché at 21.40. The cry at the studio was at 21.25." }
+      ]
+    },
+    {
+      "id": "h-visitor", "question": "Who came to the studio at nine?",
+      "hints": [
+        { "id": "h-vis-1", "tier": 1, "text": "Fouad wrote his appointments down, and the night pharmacist saw a car." },
+        { "id": "h-vis-2", "tier": 2, "text": "Find a plate number, then find where else that plate appears." },
+        { "id": "h-vis-3", "tier": 3, "text": "The diary has 'R.A.' at 21.15. A hotel garage ledger has a green Mercedes, plate 124317, out from 21.00 to 21.45." }
+      ]
+    },
+    {
+      "id": "h-motive", "question": "Why would anyone kill a photographer?",
+      "hints": [
+        { "id": "h-mot-1", "tier": 1, "text": "Fouad had new money from November 1973. Follow it." },
+        { "id": "h-mot-2", "tier": 2, "text": "Break the seal on the envelope from the darkroom, then use the magnifier." },
+        { "id": "h-mot-3", "tier": 3, "text": "Fouad photographed a fatal hit-and-run in October 1973 and blackmailed the driver. Plate 124317 is on the contact sheet, the body shop invoice and the garage ledger." }
+      ]
+    },
+    {
+      "id": "h-clear", "question": "Who can be cleared?",
+      "hints": [
+        { "id": "h-clr-1", "tier": 1, "text": "Two people lied about where they were. Find where they really were." },
+        { "id": "h-clr-2", "tier": 2, "text": "Maameltein is forty minutes from Hamra." },
+        { "id": "h-clr-3", "tier": 3, "text": "Mona was in the casino's private rooms from 21.10 to 01.20. Hagop was at Raouché from 21.40, with a witness and a policeman." }
+      ]
+    }
+  ],
+  "accusation": {
+    "how": [
+      { "id": "how-front-wages", "label": "Struck from the front with the brass stand during a quarrel over wages" },
+      { "id": "how-behind-stand", "label": "Struck once from behind with the brass stand, then the safe was emptied" },
+      { "id": "how-electric", "label": "Electrocuted by the enlarger in the wet darkroom" },
+      { "id": "how-chemicals", "label": "Poisoned with darkroom chemicals" },
+      { "id": "how-fall", "label": "He slipped and struck his head (accident)" }
+    ],
+    "why": [
+      { "id": "why-wages", "label": "Over three months of unpaid wages" },
+      { "id": "why-negative", "label": "To recover a negative that tied the killer to a fatal hit-and-run" },
+      { "id": "why-insurance", "label": "To collect on a life insurance policy" },
+      { "id": "why-cash", "label": "To steal the cash in the safe" },
+      { "id": "why-affair", "label": "Jealousy over a love affair" }
+    ],
+    "proofCount": 3
+  }
+}
